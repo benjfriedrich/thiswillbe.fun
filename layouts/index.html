@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+{{ partial "html-head.html" . }}
+
+<html>
+<body>
+
+{{ $slides := where .Site.Pages ".Section" "slides" }}
+
+{{range after 1 $slides }}
+<section class="fill-page" id="{{ .Title }}">
+
+	{{ .Content }}
+    
+</section>
+{{ end }}
+  
+
+</body>
+
+<script type="text/javascript" src="/script.js"></script>
+</html>

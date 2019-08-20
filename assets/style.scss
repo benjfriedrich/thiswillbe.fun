@@ -1,0 +1,63 @@
+html {
+
+	padding: 0;
+	margin: 0;
+}
+
+p {
+
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+body {
+
+
+	padding: 0;
+	margin: 0;
+
+}
+
+.is-hidden {
+
+	opacit: .0;
+}
+
+.fill-page {
+
+	height: 100vh;
+
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+
+.fill-space {
+
+	height: 100%;
+	margin: 0 auto;
+	background-size: auto 100%;
+	background-position: center top;
+
+}
+
+section {
+
+	text-align: center;
+
+}
+
+
+#s1 {
+
+	background-color: blue;
+}
+
+#s2 {
+
+	background-color: red;
+}
