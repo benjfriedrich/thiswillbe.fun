@@ -1,10 +1,6 @@
----
-title: s1
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="title-svg center-graphic" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 432 432" style="enable-background:new 0 0 432 432;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FB5E58;}
@@ -85,53 +81,3 @@ title: s1
 		c3.4,0,4.1-1.1,4.1-4.4c0-7.7-1.2-12.3-3.6-12.3c-2.9,0-4.1,5-4.2,16.8H373.4z"/>
 </g>
 </svg>
-
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="button-a center-graphic" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 432 432" style="enable-background:new 0 0 432 432;" xml:space="preserve">
-<style type="text/css">
-	.st10{fill:url(#SVGID_3_);}
-	.st11{fill:#FFFFFF;}
-	.st12{fill:url(#SVGID_4_);}
-</style>
-<g>
-	
-		<radialGradient id="SVGID_3_" cx="216" cy="216" r="201" gradientTransform="matrix(1 0 0 -1 0 432)" gradientUnits="userSpaceOnUse">
-		<stop  offset="3.109257e-02" style="stop-color:#FFFFFF"/>
-		<stop  offset="0.4018" style="stop-color:#9AF4F2;stop-opacity:0.6174"/>
-		<stop  offset="0.8153" style="stop-color:#2EE9E4;stop-opacity:0.1906"/>
-		<stop  offset="1" style="stop-color:#03E4DE;stop-opacity:0"/>
-	</radialGradient>
-	<circle class="st10 button-c" cx="216" cy="216" r="201"/>
-</g>
-<g>
-	<circle class="st11 button-b" cx="216" cy="216" r="128"/>
-</g>
-<g>
-	<radialGradient id="SVGID_4_" cx="216" cy="216" r="128" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.312" style="stop-color:#F5FFFF;stop-opacity:1.169446e-02"/>
-		<stop  offset="0.3931" style="stop-color:#CCF9FC;stop-opacity:6.925658e-02"/>
-		<stop  offset="0.4906" style="stop-color:#A1F3FA;stop-opacity:0.1385"/>
-		<stop  offset="0.5901" style="stop-color:#7EEDF8;stop-opacity:0.209"/>
-		<stop  offset="0.6901" style="stop-color:#63E9F6;stop-opacity:0.2801"/>
-		<stop  offset="0.7911" style="stop-color:#4FE6F5;stop-opacity:0.3518"/>
-		<stop  offset="0.8936" style="stop-color:#44E5F4;stop-opacity:0.4245"/>
-		<stop  offset="1" style="stop-color:#40E4F4;stop-opacity:0.5"/>
-	</radialGradient>
-	<circle class="st12" cx="216" cy="216" r="128"/>
-</g>
-</svg>
-
-
-
-
-
-
-
-
-
-<!-- <div id="s1b" class="fill-space is-hidden" style="background-image: url(/images/a2.svg);"></div>
-
-<div id="s1a" class="fill-space" style="background-image: url(/images/circle-page-tmp.svg);"></div>
- -->

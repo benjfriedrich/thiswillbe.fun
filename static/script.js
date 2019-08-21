@@ -154,7 +154,7 @@ class Animate {
 
 
 		anime({
-			  targets: '.st1',
+			  targets: '.button-b',
 			  fill: ['#5FECFF', '#ffffff'],
 			  direction: 'alternate',
 			  loop: true,
@@ -163,7 +163,7 @@ class Animate {
 			});
 
 		anime({
-			  targets: '.st0',
+			  targets: '.button-c',
 			  opacity: ['.2', '1'],
 			  direction: 'alternate',
 			  loop: true,
