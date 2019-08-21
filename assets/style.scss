@@ -20,9 +20,15 @@ body {
 
 }
 
+.button-a {
+
+
+
+}
+
 .is-hidden {
 
-	opacity: .0;
+	display: none;
 }
 
 .fill-page {
@@ -43,6 +49,9 @@ body {
 	background-size: auto 100%;
 	background-position: center top;
 
+	position: relative;
+	top: 0px;
+
 }
 
 section {
@@ -54,10 +63,34 @@ section {
 
 #s1 {
 
-	background-color: blue;
+	background-color: #152648;
+
+	.button-a {
+
+		position: relative;
+
+		top: 50vh;
+
+		width: 76%;
+		transition-duration: .3s;
+		transition-timing-function: ease-out;
+		}
+
+	.button-a:hover {
+
+		top: calc(50vh - 1%);
+		width: 80%;
+		transition-duration: .3s;
+		transition-timing-function: ease-out;
+		}
+
 }
+
+
 
 #s2 {
 
 	background-color: red;
+
+
 }

@@ -11,6 +11,7 @@ class StoryEngine {
 		this.storySpot = 0;
 		animate.scrollToTop();
 		console.log("StoryEngine initiated");
+		storyStructure[this.storySpot]();
 
 
 	};
@@ -46,6 +47,7 @@ var storyStructure = [
     function() { 
     	console.log("Slide 1");
     	animate.scrollTo('s1');
+    	animate.sizeAnimeTest();
 
     },
 
@@ -117,7 +119,7 @@ class Animate {
 		  left: 0,
 		  behavior: 'smooth'
 		});
-		document.body.style.overflow = 'hidden';
+		// document.body.style.overflow = 'hidden';
 	};
 
 	scrollTo(scrollTarget) {
@@ -135,10 +137,54 @@ class Animate {
 	};
 
 
+	sizeAnimeTest() {
+
+		console.log('Running anime test');
+
+		var cycleSpeed = 1000;
+
+		anime({
+			  targets: '.button-a',
+			  scale: 1.025,
+			  direction: 'alternate',
+			  loop: true,
+			  easing: 'easeInOutSine',
+			  duration: cycleSpeed
+			});
+
+
+		anime({
+			  targets: '.st1',
+			  fill: ['#5FECFF', '#ffffff'],
+			  direction: 'alternate',
+			  loop: true,
+			  easing: 'easeInOutSine',
+			  duration: cycleSpeed
+			});
+
+		anime({
+			  targets: '.st0',
+			  opacity: ['.2', '1'],
+			  direction: 'alternate',
+			  loop: true,
+			  easing: 'easeInOutSine',
+			  duration: cycleSpeed
+			});
+
+
+	};
+
+
 };
 
 
 
+
+// Things to do:
+
+// - when resizing, make sure the window stays pinned to the top of the view
+
+// - add in scroll/touch triggers
 
 
 
