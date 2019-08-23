@@ -31,6 +31,16 @@ body {
 	display: none;
 }
 
+.is-clear {
+
+	opacity: 0;
+}
+
+.is-visable {
+
+	display: block;
+}
+
 .fill-page {
 
 	height: 100vh;
@@ -74,9 +84,16 @@ section {
 
 #s1 {
 
-	background-color: #152648;
+	background-color: #121F4B;
 	text-align: center;
 
+	.having-fun {
+
+		bottom: 0px;
+		max-width: 96%;
+
+	}
+	
 	.button-a {
 
 		padding: 0 auto;
@@ -99,10 +116,12 @@ section {
 
 	.title-svg {
 
-		position: absolute;
+		max-width: 96%;
 	}
 
+
 }
+
 
 
 

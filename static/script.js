@@ -20,6 +20,7 @@ class StoryEngine {
 
 		this.storySpot ++;
 		this.storyLogic();
+		console.log('Forward')
 
 	};
 
@@ -27,6 +28,7 @@ class StoryEngine {
 
 		this.storySpot --;
 		this.storyLogic();
+		console.log('Backward')
 	};
 
 	storyLogic() {
@@ -45,15 +47,21 @@ class StoryEngine {
 
 var storyStructure = [
     function() { 
-    	console.log("Slide 1");
-    	animate.scrollTo('s1');
-    	animate.sizeAnimeTest();
 
+    	console.log("Slide 1 a");
+    	animate.scrollTo('s1');
+    	animate.blinkButton();
+    	var button = document.getElementById('the-button');
+
+    	var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.forward();};
+    	button.addEventListener('click', _func)
     },
 
     function() { 
-    	animate.scrollTo('s1');
-    	document.getElementById("s1b").classList.toggle("is-hidden");;
+
+    	console.log("Slide 1 b");
+    	animate.shrinkButton();
+    	animate.revealFunTimes();
 
     },
     
@@ -137,7 +145,7 @@ class Animate {
 	};
 
 
-	sizeAnimeTest() {
+	blinkButton() {
 
 		console.log('Running anime test');
 
@@ -174,6 +182,82 @@ class Animate {
 
 	};
 
+	shrinkButton() {
+
+		console.log('shrinkButton');
+
+		anime ({
+
+
+			targets: '.button-a',
+			scale: .0,
+
+
+
+			 complete: function(anim) {
+    		
+			 	document.getElementById('the-button').classList.toggle("is-hidden");
+
+  				}
+
+
+		});
+
+
+	};
+
+	revealFunTimes() {
+
+		console.log("revealFunTimes");
+
+		var tl = anime.timeline({
+  			duration: 150,
+  			delay: 500
+		});
+		tl
+		.add({
+		  targets: '.spotlight',
+		  opacity: 1,
+		  duration: 5,
+		})
+		.add({
+		  targets: '.girl-1',
+		  opacity: 1,
+
+		})
+		.add({
+		  targets: '.girl-2',
+		  opacity: 1,
+		});
+
+
+		var t2 = anime.timeline({
+  			duration: 150,
+  			delay: 500,
+  			// easing: 'easeInOutSine'
+
+		});
+		t2
+		.add({
+		  targets: '.title-svg',
+		  scale: 1,
+		  duration: 5
+		})
+		.add({
+		  targets: '.title-svg',
+		  
+		  rotate: -20,
+
+		})
+		.add({
+		  targets: '.title-svg',
+			translateX: 20,
+		  scale: 1.04,
+		});
+
+
+	};
+
 
 };
 
@@ -201,4 +285,4 @@ window.onload = function() {
 
 window.onunload = function(){ window.scrollTo(0,0); }
 
-window.onclick = function() {storyEngine.forward();};
+// window.onclick = function() {storyEngine.forward();};
