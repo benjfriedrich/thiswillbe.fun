@@ -39,6 +39,8 @@ class StoryEngine {
 
 	};
 
+
+
 };
 
 
@@ -51,17 +53,25 @@ var storyStructure = [
     	console.log("Slide 1 a");
     	animate.scrollTo('s1');
     	animate.blinkButton();
-    	var button = document.getElementById('the-button');
+    	animate.dots();
 
-    	var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.forward();};
-    	button.addEventListener('click', _func)
+    	animate.navButton('#the-button', true);
+
+    	// var button = document.getElementById('the-button');
+    	// var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.forward();};
+    	// button.addEventListener('click', _func)
     },
 
-    function() { 
+    function() {
 
     	console.log("Slide 1 b");
+    	animate.navButton('.down-arrow', true);
+    	animate.toggleArrow('s1');
+    	animate.scrollTo('s1');
     	animate.shrinkButton();
+    	animate.revealFunBadge()
     	animate.revealFunTimes();
+    
 
     },
     
@@ -120,6 +130,40 @@ var storyStructure = [
 class Animate {
 
 
+	navButton(target, goingForward) {
+
+		var button = document.querySelector(target);
+
+		if (goingForward == true) {
+
+			var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.forward();};
+    		button.addEventListener('click', _func)
+		} else {
+
+			var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.back();};
+    		button.addEventListener('click', _func)
+
+		}
+
+
+	}
+
+	toggleArrow (id) {
+
+		var button=document.getElementById(id).getElementsByClassName('down-arrow')[0];
+		button.classList.toggle('is-hidden');
+
+	}
+
+	getArrow (id) {
+
+		var button=document.getElementById(id).getElementsByClassName('down-arrow')[0];
+		
+		return button;
+
+	}
+
+
 	scrollToTop() {
 
 		window.scrollTo({
@@ -142,6 +186,23 @@ class Animate {
 		console.log('scrollToNext');
 		var windowHeight = window.innerHeight;
 		window.scrollBy(0, windowHeight);
+	};
+
+	dots() {
+
+
+		anime ({
+			
+			targets: '.dot',
+			loop: true,
+			direction: 'normal',
+			opacity:  [0, 1],
+			delay: anime.stagger(500, {start: 500}),
+			duration: 1,
+			endDelay: 500,
+
+		})
+		
 	};
 
 
@@ -187,24 +248,36 @@ class Animate {
 		console.log('shrinkButton');
 
 		anime ({
-
-
+			
 			targets: '.button-a',
 			scale: .0,
-
-
-
+			 
 			 complete: function(anim) {
     		
 			 	document.getElementById('the-button').classList.toggle("is-hidden");
 
   				}
-
-
 		});
 
 
 	};
+
+
+	revealFunBadge() {
+
+
+		console.log("revealFunBadge");
+
+		anime ({
+
+			targets: '.fun-badge',
+			opacity: 1,
+			scaleX: [0, 1],
+			delay: 500,
+			duration: 200,
+
+		})
+	}
 
 	revealFunTimes() {
 
@@ -219,15 +292,23 @@ class Animate {
 		  targets: '.spotlight',
 		  opacity: 1,
 		  duration: 5,
+		  delay: 1200
+
 		})
 		.add({
 		  targets: '.girl-1',
 		  opacity: 1,
+		  delay: 800
 
 		})
 		.add({
 		  targets: '.girl-2',
 		  opacity: 1,
+		})
+		.add({
+		  targets: '.arrow-1',
+		  opacity: 1,
+		  duration: 300
 		});
 
 
@@ -241,7 +322,8 @@ class Animate {
 		.add({
 		  targets: '.title-svg',
 		  scale: 1,
-		  duration: 5
+		  duration: 5,
+		  delay: 1500
 		})
 		.add({
 		  targets: '.title-svg',
@@ -250,9 +332,10 @@ class Animate {
 
 		})
 		.add({
-		  targets: '.title-svg',
-			translateX: 20,
-		  scale: 1.04,
+			targets: '.title-svg',
+			rotate: -14,
+			translateX: 22,
+			scale: 1.04,
 		});
 
 
