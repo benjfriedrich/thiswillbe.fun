@@ -78,12 +78,16 @@ var storyStructure = [
     function() {
     	console.log("Slide 2");
     	animate.scrollTo('s2');
+    	animate.paraSlider('#goals-p1');
+    	animate.checkMarks();
     },
     
     function() {
     	console.log("Slide 2");
     	animate.scrollTo('s2');
-    	document.getElementById("s2b").classList.toggle("is-hidden");
+    	animate.lightsOn();
+    	animate.revealDancers();
+   
     },
 
     function() { 
@@ -163,6 +167,77 @@ class Animate {
 
 	}
 
+	paraSlider(id) {
+
+		console.log("paraSlider");
+
+
+
+		anime ({
+
+			targets: id,
+			translateX: -450,
+			opacity: 0,
+			direction: 'reverse',
+			duration: 400,
+			easing: 'easeInOutQuad',
+			begin: function(anim) { document.querySelector(id).classList.remove("is-hidden");
+	 },
+
+		});
+
+	};
+	paraHider(id) {
+
+		console.log("paraHider");
+
+		anime ({
+
+			targets: id,
+			translateX: 450,
+			opacity: 0,
+			duration: 400,
+			easing: 'easeInOutQuad',
+
+			complete: function(anim) {
+    		
+			 	document.querySelector(id).classList.add("is-hidden");
+
+  				}
+
+		});
+
+	}
+
+	hide(id) {
+
+		document.querySelector(id).classList.add('is-hidden');
+
+	};
+
+	show(id) {
+
+		document.querySelector(id).classList.remove('is-hidden');
+		document.querySelector(id).classList.remove('is-clear');
+	};
+
+	colorSVG(id, color) {
+
+			var idList = document.querySelectorAll(id);
+			var length = idList.length;
+
+			var i;
+
+			for (i = 0; i < length; i++) {
+
+				idList[i].style.fill=color;
+
+
+			};
+
+
+			
+	};
 
 	scrollToTop() {
 
@@ -188,6 +263,9 @@ class Animate {
 		window.scrollBy(0, windowHeight);
 	};
 
+
+// First Slide
+
 	dots() {
 
 
@@ -197,7 +275,7 @@ class Animate {
 			loop: true,
 			direction: 'normal',
 			opacity:  [0, 1],
-			delay: anime.stagger(500, {start: 500}),
+			delay: anime.stagger(530, {start: 300}),
 			duration: 1,
 			endDelay: 500,
 
@@ -340,6 +418,101 @@ class Animate {
 
 
 	};
+
+// Second Slide
+
+	checkMarks() {
+
+		var button = document.querySelector("#goals");
+
+		var checkMarks = document.querySelector("#checks").children;
+
+		var count = 0;
+
+		var _func = function() { console.log('click'); 
+
+			
+
+			console.log("checkMarks ");
+
+
+			checkMarks[count].classList.toggle("is-hidden");
+
+
+			count++
+
+			if (count == 1) {
+
+			    animate.paraHider('#goals-p1');
+    			animate.paraSlider('#goals-p2');
+			};
+
+			if (count == 2) {
+
+    			animate.paraSlider('#goals-p3');
+			};
+
+			if (count == 3) {
+				button.removeEventListener('click', _func);
+
+				storyEngine.forward();
+			};
+		};
+    	
+
+    	button.addEventListener('click', _func);
+
+
+	};
+
+	lightsOn() {
+
+		console.log('lightsOn');
+
+		animate.hide('#Guy_and_Shadow');
+		animate.hide('#blue');
+		animate.show('#orange');
+		animate.hide('#screen_light');
+		animate.show('#keyboard_shadow');
+		animate.colorSVG('.st-goals4','#94253f');
+		animate.colorSVG('.st-goals9','#94253f');
+		animate.colorSVG('.st-goals6','#f1eeda');
+		animate.colorSVG('.laptop-text','#94253f');
+		animate.colorSVG('.st-goals11','#FFFFFF');
+		animate.colorSVG('.laptop-surface','url(#SVGID_goals_surface)');
+		animate.colorSVG('.st-goals7','url(#SVGID_goals_5_2_)');
+
+		document.querySelector('#laptop_shadow').style.opacity='.5';
+
+
+		anime ({
+
+			targets: "#s2",
+			duration: 200,
+			backgroundColor: '#fb5e58',
+
+		})
+
+	};
+
+	revealDancers() {
+
+		anime ({
+
+			targets: '#dance_guy, #dance_girl_1, #dance_girl_2',
+			opacity: 1,
+			delay: anime.stagger(500, {start: 500}),
+
+
+		})
+
+
+	};
+
+	startDancing() {
+
+		
+	}
 
 
 };
