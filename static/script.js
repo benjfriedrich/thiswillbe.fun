@@ -57,9 +57,7 @@ var storyStructure = [
 
     	animate.navButton('#the-button', true);
 
-    	// var button = document.getElementById('the-button');
-    	// var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.forward();};
-    	// button.addEventListener('click', _func)
+
     },
 
     function() {
@@ -69,8 +67,15 @@ var storyStructure = [
     	animate.toggleArrow('s1');
     	animate.scrollTo('s1');
     	animate.shrinkButton();
-    	animate.revealFunBadge()
+    	animate.revealFunBadge();
     	animate.revealFunTimes();
+
+
+// TEMP LOAD ZONE
+
+
+   animate.scrollTo('s6');
+   animate.thisWillBeFun();
     
 
     },
@@ -78,6 +83,7 @@ var storyStructure = [
     function() {
     	console.log("Slide 2");
     	animate.scrollTo('s2');
+    	animate.toggleArrow('s1');
     	animate.paraSlider('#goals-p1');
     	animate.checkMarks();
     },
@@ -87,31 +93,51 @@ var storyStructure = [
     	animate.scrollTo('s2');
     	animate.lightsOn();
     	animate.revealDancers();
+    	animate.show('#down-arrow-2', 2000);
+    	animate.navButton('#down-arrow-2', true);
+
    
     },
 
     function() { 
     	console.log("Slide 3");
     	animate.scrollTo('s3');
+    	animate.pinataReveal();
+    	animate.paraSlider('#pinata-p1');
+    	animate.pinata();
+    	animate.navButton('#down-arrow-3', true);
 
     },
 
     function() { 
-    	console.log("Slide 3");
-    	animate.scrollTo('s3');
-    	document.getElementById("s3b").classList.toggle("is-hidden");
+    	console.log("Slide 4");
+    	animate.scrollTo('s4');
+    	animate.paraSlider("#s4-p1");
+    	animate.sunBlink();
+    	animate.navButton('#sunrise', true)
     },
 
      function() {
     	console.log("Slide 4");
     	animate.scrollTo('s4');
+    	animate.sunRise();
+    	animate.navButton('#down-arrow-4', true);
 
     },
 
      function() {
-    	console.log("Slide 4");
-    	animate.scrollTo('s4');
-    	document.getElementById("s4b").classList.toggle("is-hidden");
+    	console.log("Slide 5");
+    	animate.scrollTo('s5');
+    	animate.autoTicTac();
+    	animate.navButton('#xo7', true);
+    	
+
+    },
+
+     function() {
+    	console.log("Slide 5");
+    	animate.scrollTo('s5');
+    	animate.ticTacToe();
 
     },
 
@@ -119,12 +145,6 @@ var storyStructure = [
     	console.log("Slide 5");
     	animate.scrollTo('s5');
 
-    },
-
-     function() {
-    	console.log("Slide 5");
-    	animate.scrollTo('s5');
-    	document.getElementById("s5b").classList.toggle("is-hidden");
     }
 ];
 
@@ -148,6 +168,7 @@ class Animate {
     		button.addEventListener('click', _func)
 
 		}
+
 
 
 	}
@@ -215,10 +236,28 @@ class Animate {
 
 	};
 
-	show(id) {
+	show(id, delay = 0) {
 
+
+		if (delay == 0) {
 		document.querySelector(id).classList.remove('is-hidden');
 		document.querySelector(id).classList.remove('is-clear');
+
+		} else {
+
+			anime ({
+
+				duration: delay,
+
+				complete: function(anim) {
+   				document.querySelector(id).classList.remove('is-hidden');
+				document.querySelector(id).classList.remove('is-clear');
+  				}
+
+			});
+		};
+
+
 	};
 
 	colorSVG(id, color) {
@@ -290,13 +329,17 @@ class Animate {
 
 		var cycleSpeed = 1000;
 
+	
+
 		anime({
 			  targets: '.button-a',
 			  scale: 1.025,
 			  direction: 'alternate',
 			  loop: true,
 			  easing: 'easeInOutSine',
-			  duration: cycleSpeed
+			  duration: cycleSpeed,
+
+			  	
 			});
 
 
@@ -455,7 +498,8 @@ class Animate {
 			if (count == 3) {
 				button.removeEventListener('click', _func);
 
-				storyEngine.forward();
+				setTimeout(function() {storyEngine.forward();}, 400);
+
 			};
 		};
     	
@@ -497,11 +541,28 @@ class Animate {
 
 	revealDancers() {
 
+		animate.startDancing();
+
 		anime ({
 
 			targets: '#dance_guy, #dance_girl_1, #dance_girl_2',
 			opacity: 1,
-			delay: anime.stagger(500, {start: 500}),
+			delay: anime.stagger([600,1000]),
+
+			complete: function(anim) {
+    		
+			 	anime ({
+
+			targets: '#s2',
+			background: '#fb6c59',
+			easing: 'easeInOutQuad',
+			direction: 'alternate',
+			loop: true,
+
+
+		})
+
+  				},
 
 
 		})
@@ -511,8 +572,380 @@ class Animate {
 
 	startDancing() {
 
+		anime ({
+
+			targets: '#dance_guy',
 		
+			translateY: -2,
+			translateX:-2,
+			easing: 'linear',
+			rotate: .5,
+			loop: true,
+			direction: 'alternate',
+			duration: 320,
+
+
+
+
+		})
+
+		anime ({
+
+			targets: '#dance_girl_1',
+			translateY: 1,
+			translateX: -1,
+			easing: 'linear',
+			rotate: -.2,
+			loop: true,
+			direction: 'alternate',
+			duration: 380,
+
+
+		})
+
+		anime ({
+
+			targets: '#dance_girl_2',
+			translateY: 2,
+			easing: 'linear',
+			rotate: .2,
+			loop: true,
+			direction: 'alternate',
+			duration: 340,
+			
+		})
+
+		
+
+
 	}
+
+	// Third Slide
+
+	pinataReveal() {
+
+		anime({
+		  targets: '#pinata-01',
+		  top: '-500px',
+		  easing: 'easeInElastic',
+		  direction: 'reverse',
+		});
+
+
+	};
+
+	pinataBounce(id) {
+
+
+		anime({
+		  targets: id,
+		  translateY: -50,
+		  easing: 'easeOutQuad',
+		  scale: .9,
+		  direction: 'alternate',
+		  endDelay: 0,
+		  duration: 200,
+
+		});
+
+
+
+	};
+
+	pinata() {
+		var button = document.querySelector('#pinata-01');
+
+		var count = 0;
+
+		var _func = function() { console.log('click'); 
+
+			console.log("Pinata");
+
+
+			count++
+
+			if (count == 1) {
+				animate.hide('#outline-1');
+				animate.hide('#pinata-1');
+				animate.show('#outline-2');
+				animate.show('#pinata-2');
+				document.querySelector('#s3').style.backgroundColor = '#ffd02f';
+				animate.pinataBounce('#pinata-01');
+			};
+
+			if (count == 2) {
+
+				animate.hide('#outline-2');
+				animate.hide('#pinata-2');
+				animate.show('#outline-3');
+				animate.show('#pinata-3');
+				document.querySelector('#s3').style.backgroundColor = '#ff5fe2';
+				animate.pinataBounce('#pinata-01');
+
+			};
+
+			if (count == 3) {
+				animate.hide('#pinata-01');
+				animate.show('#pinata-02');
+				document.querySelector('#s3').style.backgroundColor = '#18b9de';
+				animate.pinataBounce('#pinata-02');
+				animate.paraHider('#pinata-p1');
+				animate.paraSlider('#pinata-p2');
+				animate.show('#down-arrow-3', 2000);
+			
+			};
+
+		};
+    	
+
+    	button.addEventListener('click', _func);
+
+	};
+
+// Slide 4
+
+
+	sunBlink() {
+
+		anime ({
+
+			targets: '.st-sunrise-1',
+			opacity: .5,
+			direction: 'alternate',
+			easing: 'linear',
+			loop: true,
+			duration: 2000,
+		})
+
+
+	};
+
+	sunRise() {
+
+		console.log("sunRise");
+
+
+		anime ({
+
+			targets: '#main-sunrise',
+			translateY: -700,
+			easing: 'easeOutQuad',
+			duration: 800,
+
+		});
+
+		anime ({
+
+			targets: '.hills',
+			translateY: 300,
+			easing: 'easeInCubic',
+			direction: 'reverse',
+			duration: 800,
+
+		})
+
+		anime ({
+
+			targets: '#front-hill',
+			translateY: 600,
+			easing: 'easeOutQuad',
+			duration: 800,
+
+			 complete: function(anim) {
+    		
+			 	   	animate.paraSlider("#s4-p2");
+			 	   	animate.show('#down-arrow-4', 1000);
+
+  				}
+
+		});
+
+
+
+	};
+
+	// Slide 5
+
+	autoTicTac() {
+
+		console.log("autoTicTac")
+
+		var t1 = anime.timeline({
+			  easing: 'linear',
+			  duration: 300,
+			  translateY: [
+
+					{value: 10},
+					{value: 0}
+				]
+			  
+			});
+
+
+		t1
+
+		.add ({
+
+			duration: 0,
+			complete: function(anim) {
+
+				animate.paraSlider("#s5-p1");
+			}
+		})
+
+		.add ({
+
+			targets: "#grid",
+			delay: 1000,
+			opacity: 1,
+			
+
+		})
+
+		.add({
+
+			targets: '#xo1',
+			opacity: 1,
+			delay: 500,
+		
+
+		})
+
+		.add({
+
+			targets: '#xo2',
+			opacity: 1,
+
+		})
+
+		.add({
+
+			targets: '#xo3',
+			opacity: 1,
+
+		})
+
+		.add({
+
+			targets: '#xo4',
+			opacity: 1,
+
+		})
+
+		.add({
+
+			targets: '#xo5',
+			opacity: 1,
+
+		})
+
+		.add({
+
+			targets: '#xo6',
+			opacity: 1,
+			endDelay: 750,
+
+			complete: function(anim) {
+
+				animate.paraSlider("#s5-p2");
+
+				// var t = 0;
+
+				// anime ({
+
+
+				// 	duration: 1000,
+				// 	targets: '#xo7',
+				// 	opacity: .05,
+				// 	loop: true,
+				// 	direction: 'alternate',
+				// 	easing: 'linear',
+
+				// 	loopComplete: function(anim) {
+
+			 //  		t++;
+
+			 //  		if (t==4) {
+
+			 //  					anim.reset();
+
+			 //  		};
+				// 	}
+
+				// })
+			}
+
+		})
+
+
+
+	};
+
+	ticTacToe() {
+
+		console.log("tictactoe");
+
+		anime ({
+			
+			targets: '#xo7',
+			opacity: 1,
+			easing: 'linear',
+			duration: 300,
+
+
+			})
+
+		anime ({
+
+			targets: '.st-xo-1',
+			stroke: '#00bbe9',
+			delay: 800,
+			duration: 200,
+
+
+
+		})
+
+	};
+
+
+	// slide 6
+
+	thisWillBeFun() {
+
+		anime ({
+
+			targets: '.twbf .st-twbf-0', 
+			  strokeDashoffset: [anime.setDashoffset, 0],
+			  easing: 'easeInOutSine',
+			  duration: 1500,
+			  // delay: function(el, i) { return i * 250 },
+		
+			  delay: anime.stagger(100),
+
+
+
+			  complete: function(anim) {
+
+			  	anime ({
+
+			  		targets: '.twbf .st-twbf-0', 
+			  		fill: '#ffffff',
+			  		duration: 800,
+			  		stokeWidth: 0,
+
+
+			  	})
+
+
+			  }
+			  
+
+		})
+
+	};
+
+
 
 
 };

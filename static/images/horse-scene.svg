@@ -1,34 +1,30 @@
----
-title: s4
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg id="sunrise" class="center-graphic" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 8612.1 4839.5" style="enable-background:new 0 0 8612.1 4839.5;" xml:space="preserve">
 <style type="text/css">
-	.st-sunrise-0{fill:#121F4B;}
-	.st-sunrise-1{fill:url(#SVGID_sunrise_1_);}
-	.st-sunrise-2{fill:url(#SVGID_sunrise_2_);}
-	.st-sunrise-3{fill:url(#SVGID_sunrise_3_);}
-	.st-sunrise-4{fill:url(#SVGID_sunrise_4_);}
-	.st-sunrise-5{fill:url(#SVGID_sunrise_5_);}
+	.st0{fill:#121F4B;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{fill:url(#SVGID_3_);}
+	.st4{fill:url(#SVGID_4_);}
+	.st5{fill:url(#SVGID_5_);}
 </style>
 <g id="back">
-	<rect x="-13.6" y="-14.5" class="st-sunrise-0" width="8624" height="4867"/>
+	<rect x="-13.6" y="-14.5" class="st0" width="8624" height="4867"/>
 </g>
-<g id="main-sunrise">
-	<radialGradient id="SVGID_sunrise_1_" cx="4299.7437" cy="3019.3206" r="3429.7576" gradientUnits="userSpaceOnUse">
+<g id="main">
+	<radialGradient id="SVGID_1_" cx="4299.7437" cy="3019.3206" r="3429.7576" gradientUnits="userSpaceOnUse">
 		<stop  offset="6.820437e-04" style="stop-color:#0071BC"/>
 		<stop  offset="0.4426" style="stop-color:#0071BC;stop-opacity:0"/>
 	</radialGradient>
-	<circle class="st-sunrise-1" cx="4306" cy="3088.6" r="1704.1"/>
-	<radialGradient id="SVGID_sunrise_2_" cx="4232.4355" cy="3672.5781" r="1644.6486" gradientUnits="userSpaceOnUse">
+	<circle class="st1" cx="4306" cy="3088.6" r="1704.1"/>
+	<radialGradient id="SVGID_2_" cx="4232.4355" cy="3672.5781" r="1644.6486" gradientUnits="userSpaceOnUse">
 		<stop  offset="0.2283" style="stop-color:#FCF9A4"/>
 		<stop  offset="0.9388" style="stop-color:#FCF958"/>
 	</radialGradient>
-	<circle class="st-sunrise-2" cx="4306" cy="2983.6" r="817.2"/>
-	<path class="st-sunrise-0 hills" d="M4833.6,3022.1c-10.8-5.2-29.7,6.1-29.7,6.1l-58.1-29.6l-29.4-31.2c6.9,2.1,13.5,3.5,18.9,4.7
+	<circle class="st2" cx="4306" cy="2983.6" r="817.2"/>
+	<path class="st0" d="M4833.6,3022.1c-10.8-5.2-29.7,6.1-29.7,6.1l-58.1-29.6l-29.4-31.2c6.9,2.1,13.5,3.5,18.9,4.7
 		c16.4,3.6,57.4,0,59.3-23.1c1.4-16.9-40.2-17.6-52.9-40.3c-11.1-19.7,0-52.6-14.2-75.9c-22.3-36.8-88.2-36.4-88.9-5.7
 		c-0.1,3.2,0.5,6,1.4,8.3c-1.9,3-4,7-5.9,8.8c-1.6,1.5-13.6,11.1-14,13c-0.7,3.7,3.3,5.8,4.7,9.4c1.9,4.9,0.3,4.3,0,8.8
 		c-0.1,2.2,5,2.8,5,5.4c0,3-3.6,0.5-4.8,4.3c-0.3,1,0.9,3.8,1,5.5c0.4,7.4,0.4,10.9,9.7,13.5c2.2,0.6,5.3,1.5,9,2.3l-3.1,10.9
@@ -39,7 +35,7 @@ title: s4
 		c9.2-5.3,18.2-10.5,34.3-2.5c23.7,11.8,71.8-21.4,55.5-25.5c-7.3-1.8-22.7-5.5-47.8-19.1c-62.8-34.1-62.8-84.7-62.8-84.7
 		s5.2-13,10.4-30c11.1,11.2,23.3,21.1,34.7,28c14.3,8.6,65.8,22,74.1,22.8c8.3,0.8,23.4,1.8,31.2-3.5
 		C4846.3,3033.9,4843.5,3026.9,4833.6,3022.1z"/>
-	<path class="st-sunrise-0 hills" d="M4383.8,2832.7c0,0-60.2-89-83.5-99.8c-13.6-6.3-55.7,7-88.3,19.2c-2.3-26.7-4-51.2,8.1-89.5
+	<path class="st0" d="M4383.8,2832.7c0,0-60.2-89-83.5-99.8c-13.6-6.3-55.7,7-88.3,19.2c-2.3-26.7-4-51.2,8.1-89.5
 		c46,9.6,60.8-14.3,76.7-13.7c32.8,1.4,59.6,0.7,64.2-18.4c3.4-14.4,2-49.2-31.4-51.9c-14.5-1.2-60.3-4.8-85.8-26.6
 		c-11.3-9.7-29.7-16-48.5-16.9c3.3-23.6-8.4-38.5-17.8-28.2c-7.4,8-11.8,16.4-14.5,23.6c-7.2,0.6-14.1,4-17.1,9.3
 		c-26.6,48.5-89.3,41.2-93.2,46.3c0.3,9.6,11.3,26.4,36.9,31c-24.2,49.3-82.2,40.1-87.3,46.8c-5.1,6.7,23.9,32.7,71.2,30
@@ -50,7 +46,7 @@ title: s4
 		c38.4,4.2,117.2-2.8,117.2-2.8s15.1,72.3,27,90.3c0,0-16.8,19.6-20.7,28.2c-3.9,8.6,16.6,33.7,27.8,35c11.1,1.2,20.2-62,20.2-62
 		c-3.6-56.7-14.3-100.8-22.2-119.9c-7.5-18-57.1-27.5-83.2-45.4l55.5-43.4c0,0,31.2,21.4,63.1,58.4c0,0-2,16.7-0.3,35
 		c1.2,13.5,38.6,17.6,39.2,10C4396.7,2872.2,4383.8,2832.7,4383.8,2832.7z"/>
-	<radialGradient id="SVGID_sunrise_3_" cx="3297.2664" cy="1975.5419" r="2162.9172" gradientUnits="userSpaceOnUse">
+	<radialGradient id="SVGID_3_" cx="3297.2664" cy="1975.5419" r="2162.9172" gradientUnits="userSpaceOnUse">
 		<stop  offset="6.884266e-02" style="stop-color:#0071BC"/>
 		<stop  offset="7.407890e-02" style="stop-color:#0070BB"/>
 		<stop  offset="0.3648" style="stop-color:#084D8B"/>
@@ -58,9 +54,9 @@ title: s4
 		<stop  offset="0.8305" style="stop-color:#112553"/>
 		<stop  offset="0.9673" style="stop-color:#121F4B"/>
 	</radialGradient>
-	<path class="st-sunrise-3 hills" d="M5790.7,4839.5H-13.6V4057c653.2-707.5,1588.6-1150.5,2627.5-1150.5
+	<path class="st3" d="M5790.7,4839.5H-13.6V4057c653.2-707.5,1588.6-1150.5,2627.5-1150.5
 		C3996.5,2906.5,5195.7,3691.2,5790.7,4839.5z"/>
-	<radialGradient id="SVGID_sunrise_4_" cx="5462.2476" cy="2103.4951" r="2074.3489" gradientUnits="userSpaceOnUse">
+	<radialGradient id="SVGID_4_" cx="5462.2476" cy="2103.4951" r="2074.3489" gradientUnits="userSpaceOnUse">
 		<stop  offset="6.884266e-02" style="stop-color:#0071BC"/>
 		<stop  offset="7.346268e-02" style="stop-color:#0070BB"/>
 		<stop  offset="0.3299" style="stop-color:#084D8B"/>
@@ -68,11 +64,11 @@ title: s4
 		<stop  offset="0.7409" style="stop-color:#112553"/>
 		<stop  offset="0.8616" style="stop-color:#121F4B"/>
 	</radialGradient>
-	<path class="st-sunrise-4 hills" d="M8610.4,3751.1v1088.4H3080.3c590-1163,1797.2-1960,3190.6-1960C7165.5,2879.5,7983.4,3208,8610.4,3751.1z"/>
+	<path class="st4" d="M8610.4,3751.1v1088.4H3080.3c590-1163,1797.2-1960,3190.6-1960C7165.5,2879.5,7983.4,3208,8610.4,3751.1z"/>
 </g>
 <g id="front-hill">
 	
-		<radialGradient id="SVGID_sunrise_5_" cx="4326.7168" cy="1906.2625" r="3161.5571" gradientTransform="matrix(1 0 0 0.539 0 878.761)" gradientUnits="userSpaceOnUse">
+		<radialGradient id="SVGID_5_" cx="4326.7168" cy="1906.2625" r="3161.5571" gradientTransform="matrix(1 0 0 0.539 0 878.761)" gradientUnits="userSpaceOnUse">
 		<stop  offset="6.884266e-02" style="stop-color:#0071BC"/>
 		<stop  offset="0.1681" style="stop-color:#0363A9"/>
 		<stop  offset="0.4019" style="stop-color:#0A4680"/>
@@ -80,14 +76,6 @@ title: s4
 		<stop  offset="0.7993" style="stop-color:#112451"/>
 		<stop  offset="0.9327" style="stop-color:#121F4B"/>
 	</radialGradient>
-	<path class="st-sunrise-5" d="M8625.4,4830.5H2.4c0-1307.8,1930.3-2368,4311.5-2368S8625.4,3522.7,8625.4,4830.5z"/>
+	<path class="st5" d="M8625.4,4830.5H2.4c0-1307.8,1930.3-2368,4311.5-2368S8625.4,3522.7,8625.4,4830.5z"/>
 </g>
 </svg>
-
-
-
-<p id="s4-p1" class="top is-hidden">A great website finds ways to entice you…</p>
-
-<p id="s4-p2" class="bottom is-hidden">and create moments of unexpected delight!</p>
-
-<img id="down-arrow-4" class="center-graphic down-arrow arrow-1 is-hidden is-clear" src="/images/down-arrow.svg">
