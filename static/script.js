@@ -1094,7 +1094,7 @@ window.onload = function() {
 
 	animate.scrollToTop();
 	animate.scrollTo('s1');
-	parent.scrollTo(0,0);
+	parent.scrollTo(0,1);
 
 };
 
