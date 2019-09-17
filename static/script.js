@@ -72,10 +72,7 @@ var storyStructure = [
 
 
 // TEMP LOAD ZONE
-	// animate.scrollTo('s6');
-	// animate.thisWillBeFun();
 
-  
     
 
     },
@@ -280,6 +277,8 @@ class Animate {
 	};
 
 	scrollToTop() {
+
+		console.log("Scroll to Top");
 
 		window.scrollTo({
 		  top: 0,
@@ -1085,13 +1084,6 @@ class Animate {
 
 
 
-// Things to do:
-
-// - when resizing, make sure the window stays pinned to the top of the view
-
-// - add in scroll/touch triggers
-
-
 
 
 
@@ -1101,9 +1093,11 @@ window.onload = function() {
 	storyEngine = new StoryEngine();
 
 	animate.scrollToTop();
+	animate.scrollTo('s1');
+	parent.scrollTo(0,0);
 
 };
 
-window.onunload = function(){ window.scrollTo(0,0); }
+window.onunload = function(){ animate.scrollToTop(); }
 
 // window.onclick = function() {storyEngine.forward();};
