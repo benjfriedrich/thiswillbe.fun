@@ -14,12 +14,13 @@ p {
 	font-family:  benton-modern, serif;
 	font-size: 22pt;
 	color: white;
+	font-weight: 700;
 
 
 }
 .bottom {
 		position: absolute;
-		bottom: 30px;
+		bottom: 60px;
 	}
 
 .top {
@@ -228,5 +229,54 @@ section {
 		width: 90%;
 
 		margin-top: 30%;
+	}
+
+	#s6-p1 {
+
+			text-align: center;
+			top: 32vh;
+
+		}
+
+	#bjf {
+
+		top: 50vh;
+
+		text-align: center;
+
+
+
+		#name {
+
+			font-size: 20pt;
+			font-weight: 400;
+			padding-top: 10px;
+		}
+
+		#description {
+
+		font-family: sys-tt, sans-serif;
+		font-weight: 400;
+		font-size: 14pt;
+		padding-top: 10px;
+
+		}
+
+	}
+
+	#sig {
+
+		width: 18%;
+	}
+
+	#learn-more {
+
+	font-family: sys-tt, sans-serif;
+		font-weight: 400;
+		font-size: 13pt;
+		padding-top: 20px;
+		text-decoration: underline;
+
+
 	}
 }

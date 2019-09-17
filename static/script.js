@@ -72,10 +72,10 @@ var storyStructure = [
 
 
 // TEMP LOAD ZONE
+	// animate.scrollTo('s6');
+	// animate.thisWillBeFun();
 
-
-   animate.scrollTo('s6');
-   animate.thisWillBeFun();
+  
     
 
     },
@@ -142,8 +142,9 @@ var storyStructure = [
     },
 
      function() {
-    	console.log("Slide 5");
-    	animate.scrollTo('s5');
+    	console.log("Slide 6");
+    	animate.scrollTo('s6');
+   		animate.thisWillBeFun();
 
     }
 ];
@@ -572,6 +573,8 @@ class Animate {
 
 	startDancing() {
 
+		var storySpot = storyEngine.storySpot;
+
 		anime ({
 
 			targets: '#dance_guy',
@@ -584,7 +587,15 @@ class Animate {
 			direction: 'alternate',
 			duration: 320,
 
+			loopComplete: function(anim) {
 
+				if (storyEngine.storySpot !== storySpot) {
+
+					console.log("END ANIMATION");
+
+					anime.remove('#dance_guy, #dance_girl_1, #dance_girl_2');
+				}
+			}
 
 
 		})
@@ -639,12 +650,37 @@ class Animate {
 
 		anime({
 		  targets: id,
-		  translateY: -50,
+		
 		  easing: 'easeOutQuad',
-		  scale: .9,
-		  direction: 'alternate',
+		  
+		  scale: [
+
+		  	{value: .9},
+		  	{value: 1.05},
+		  	{value: 1},
+
+		  ],
+
+		  translateY: [
+
+		  	{value: -30},
+		  	{value: 20},
+		  	{value: 0},
+
+		  ],
+
+		  // keyframe: [
+
+		  // 	{scale: .9, translateY: -50},
+		  // 	{scale: 1.05, translateY: 20},
+		  // 	{scale: 1.0, translateY: 0},
+
+		  // ],
+
+		  // scale: .9,
+		  // direction: 'alternate',
 		  endDelay: 0,
-		  duration: 200,
+		  duration: 800,
 
 		});
 
@@ -707,14 +743,27 @@ class Animate {
 
 	sunBlink() {
 
+		var storySpot = storyEngine.storySpot;
+
 		anime ({
 
 			targets: '.st-sunrise-1',
-			opacity: .5,
+			opacity: .2,
 			direction: 'alternate',
 			easing: 'linear',
 			loop: true,
 			duration: 2000,
+
+			loopComplete: function(anim) {
+
+				if (storyEngine.storySpot !== storySpot && storyEngine.storySpot !== storySpot + 1) {
+
+					console.log("END ANIMATION");
+
+					anime.remove('.st-sunrise-1');
+				}
+			}
+
 		})
 
 
@@ -849,30 +898,6 @@ class Animate {
 
 				animate.paraSlider("#s5-p2");
 
-				// var t = 0;
-
-				// anime ({
-
-
-				// 	duration: 1000,
-				// 	targets: '#xo7',
-				// 	opacity: .05,
-				// 	loop: true,
-				// 	direction: 'alternate',
-				// 	easing: 'linear',
-
-				// 	loopComplete: function(anim) {
-
-			 //  		t++;
-
-			 //  		if (t==4) {
-
-			 //  					anim.reset();
-
-			 //  		};
-				// 	}
-
-				// })
 			}
 
 		})
@@ -901,7 +926,13 @@ class Animate {
 			stroke: '#00bbe9',
 			delay: 800,
 			duration: 200,
+			endDelay: 800,
 
+			complete: function(anim) {
+
+				animate.show('#down-arrow-5');
+				animate.navButton('#down-arrow-5', true);
+			}
 
 
 		})
@@ -913,35 +944,136 @@ class Animate {
 
 	thisWillBeFun() {
 
-		anime ({
+		var tl = anime.timeline({
+
+			easing: 'linear',
+
+		});
+
+
+		tl
+		.add({
+
+			targets: '#sig',
+			opacity: 1,
+			duration: 100,
+			delay: 800,
+
+		})
+
+		.add({
+			targets: '#s6-p1',
+			opacity: 1,
+			duration: 250,
+			delay: 1000,
+			
+		})
+		
+		.add({
+
+			targets: '#name',
+			opacity: 1,
+			duration: 100,
+			delay: 1000,
+
+		})
+
+		.add({
+
+			targets: '#description',
+			opacity: 1,
+			duration: 100,
+			delay: 500,
+
+		})
+
+			.add ({
+
+			targets: '#s6-p1',
+			opacity: 0,
+			duration: 100,
+			delay: 2000,
+			
+	
+		})
+
+		.add ({
+
+			targets: '#bjf',
+			translateY: '18vh',
+			duration: 600,
+			easing: 'easeOutSine',
+
+		})
+
+		.add ({
 
 			targets: '.twbf .st-twbf-0', 
 			  strokeDashoffset: [anime.setDashoffset, 0],
+			  opacity: 1,
 			  easing: 'easeInOutSine',
 			  duration: 1500,
-			  // delay: function(el, i) { return i * 250 },
-		
 			  delay: anime.stagger(100),
+			  begin: function(anim) {
 
+				animate.show('.twbf');
+			},
 
+	
 
-			  complete: function(anim) {
-
-			  	anime ({
-
-			  		targets: '.twbf .st-twbf-0', 
-			  		fill: '#ffffff',
-			  		duration: 800,
-			  		stokeWidth: 0,
-
-
-			  	})
-
-
-			  }
-			  
 
 		})
+
+		.add ({
+
+			targets: '.twbf .st-twbf-0', 
+			fill: '#ffffff',
+	  		delay: 600,
+	  		duration: 1,
+	  		stokeWidth: 0,
+
+		})
+
+		.add ({
+
+			targets: '#s6',
+		 	backgroundColor: '#fb5e58',
+	 		duration: 1,
+
+	 		complete: function(anim) {
+
+
+
+	 			var text = document.querySelectorAll('.st-twbf-0');
+	 			var i;
+
+	 			console.log(text);
+
+	 			length = text.length;
+
+	 			console.log(length);
+
+	 			for (i = 0; i < length; i++) {
+
+	 				console.log(text[i]);
+	 				text[i].style.stroke='none';
+
+	 			};
+
+	 			
+	 		}
+
+		})
+
+
+		.add ({
+
+			targets: '#learn-more',
+			opacity: 1,
+			delay: 2000,
+			duration: 200,
+		})
+		
 
 	};
 
