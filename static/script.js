@@ -281,11 +281,11 @@ class Animate {
 		console.log("Scroll to Top");
 
 		window.scrollTo({
-		  top: 1,
+		  top: 40,
 		  left: 0,
 		  behavior: 'smooth'
 		});
-		// document.body.style.overflow = 'hidden';
+		document.body.style.overflow = 'hidden';
 	};
 
 	scrollTo(scrollTarget) {
