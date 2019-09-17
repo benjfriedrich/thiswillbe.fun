@@ -281,7 +281,7 @@ class Animate {
 		console.log("Scroll to Top");
 
 		window.scrollTo({
-		  top: 0,
+		  top: 1,
 		  left: 0,
 		  behavior: 'smooth'
 		});
@@ -1093,8 +1093,6 @@ window.onload = function() {
 	storyEngine = new StoryEngine();
 
 	animate.scrollToTop();
-	animate.scrollTo('s1');
-	parent.scrollTo(0,1);
 
 };
 
