@@ -1122,7 +1122,7 @@ window.addEventListener("touchmove", function(event) {
     document.querySelector('#s1').style.backgroundColor = '#dddddd';
 
 
-}, false);
+}, { passive: false });
 
 
 // window.onclick = function() {storyEngine.forward();};
