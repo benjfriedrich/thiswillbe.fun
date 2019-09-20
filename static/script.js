@@ -1103,7 +1103,7 @@ window.onload = function() {
 
 	animate.scrollToTop();
 
-preventScroll();
+
 
 
 };
@@ -1116,7 +1116,10 @@ window.onunload = function(){ animate.scrollToTop(); }
 // 	};
 
 
-window.ontouchmove = preventDefault();
+document.body.addEventListener("touchmove", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+}, false);
 
 
 // window.onclick = function() {storyEngine.forward();};
