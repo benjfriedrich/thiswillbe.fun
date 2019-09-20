@@ -1110,7 +1110,7 @@ preventScroll();
 
 window.onunload = function(){ animate.scrollToTop(); }
 
-window.onTouchMove = function() {
+window.ontouchmove = function() {
 		document.querySelector('#s1').style.backgroundColor = '#dddddd';
 		preventDefault();
 	};
