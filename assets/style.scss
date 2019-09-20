@@ -7,6 +7,7 @@ html {
 body {
   height: 100%;
   width: 100%;
+  touch-action: none;
 
 }
 
@@ -26,7 +27,7 @@ p {
 }
 .bottom {
 		position: absolute;
-		bottom: 60px;
+		bottom: 75px;
 	}
 
 .top {
@@ -106,7 +107,7 @@ section {
 
 	width: 13%;
 
-	bottom: 15px;
+	bottom: 45px;
 
 }
 
@@ -167,7 +168,7 @@ section {
 
 	#goals-p3 {
 
-		bottom: 60px;
+		
 	}
 
 
@@ -192,7 +193,7 @@ section {
 
 	#pinata-p1, #pinata-p2 {
 
-		bottom: 60px;
+		
 	
 	}
 
@@ -209,7 +210,7 @@ section {
 
 	#s4-p2 {
 
-		margin-bottom: 60px;
+	
 	} 
 }
 
