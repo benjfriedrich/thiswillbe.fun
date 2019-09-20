@@ -1110,10 +1110,13 @@ preventScroll();
 
 window.onunload = function(){ animate.scrollToTop(); }
 
-window.ontouchmove = function() {
-		document.querySelector('#s1').style.backgroundColor = '#dddddd';
-		preventDefault();
-	};
+// window.ontouchmove = function() {
+// 		document.querySelector('#s1').style.backgroundColor = '#dddddd';
+// 		preventDefault();
+// 	};
+
+
+window.ontouchmove = preventDefault();
 
 
 // window.onclick = function() {storyEngine.forward();};
