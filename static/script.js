@@ -1084,11 +1084,11 @@ class Animate {
 function preventScroll() {
 
 	document.onTouchMove = function() {
-
+		document.querySelector('#s1').style.backgroundColor = '#dddddd';
 		preventDefault();
 	};
 
-	document.querySelector('#s1').style.backgroundColor = '#dddddd';
+
 
 };
 
