@@ -102,7 +102,7 @@ var storyStructure = [
     	animate.pinataReveal();
     	animate.paraSlider('#pinata-p1');
     	animate.pinata();
-    	animate.navButton('#down-arrow-3', true);
+    	animate.navButton('#pinata-02', true);
 
     },
 
@@ -281,7 +281,7 @@ class Animate {
 		console.log("Scroll to Top");
 
 		window.scrollTo({
-		  top: 40,
+		  top: 0,
 		  left: 0,
 		  behavior: 'smooth'
 		});
@@ -726,7 +726,7 @@ class Animate {
 				animate.pinataBounce('#pinata-02');
 				animate.paraHider('#pinata-p1');
 				animate.paraSlider('#pinata-p2');
-				animate.show('#down-arrow-3', 2000);
+			
 			
 			};
 
@@ -1110,19 +1110,12 @@ window.onload = function() {
 
 window.onunload = function(){ animate.scrollToTop(); }
 
-// window.ontouchmove = function() {
-// 		document.querySelector('#s1').style.backgroundColor = '#dddddd';
-// 		preventDefault();
-// 	};
 
 
 window.addEventListener("touchmove", function(event) {
     event.preventDefault();
     event.stopPropagation();
-    document.querySelector('#s1').style.backgroundColor = '#dddddd';
-
 
 }, { passive: false });
 
-
-// window.onclick = function() {storyEngine.forward();};
+	

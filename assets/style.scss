@@ -19,15 +19,24 @@ p {
 	padding-left: 20px;
 	padding-right: 20px;
 	font-family:  benton-modern, serif;
-	font-size: 22pt;
+	font-size: 18pt;
 	color: white;
 	font-weight: 700;
 
+	@media screen and (min-width: 360px) {
+
+		font-size: 22pt;
+	}
 
 }
+
+
+
+
+
 .bottom {
 		position: absolute;
-		bottom: 75px;
+		bottom: 80px;
 	}
 
 .top {
@@ -119,8 +128,8 @@ section {
 
 	.having-fun {
 
-		bottom: 0px;
-		max-width: 96%;
+		bottom: 44px;
+		width: 88%;
 
 	}
 	
@@ -146,7 +155,7 @@ section {
 
 	.title-svg {
 
-		max-width: 96%;
+		max-width: 85%;
 	}
 
 
@@ -181,13 +190,13 @@ section {
 
 	#pinata-01 {
 
-		width: 80%;
-		top: -25%;
+		width: 70%;
+		top: -27%;
 
 	}
 	#pinata-02 {
 
-		width: 97%;
+		width: 88%;
 		top:-5%;
 	}
 
