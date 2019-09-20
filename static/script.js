@@ -1110,4 +1110,10 @@ preventScroll();
 
 window.onunload = function(){ animate.scrollToTop(); }
 
+document.onTouchMove = function() {
+		document.querySelector('#s1').style.backgroundColor = '#dddddd';
+		preventDefault();
+	};
+
+
 // window.onclick = function() {storyEngine.forward();};
