@@ -36,7 +36,7 @@ p {
 
 .bottom {
 		position: absolute;
-		bottom: 80px;
+		bottom: 120px;
 	}
 
 .top {
@@ -128,8 +128,8 @@ section {
 
 	.having-fun {
 
-		bottom: 44px;
-		width: 88%;
+		bottom: 80px;
+		width: 80%;
 
 	}
 	
@@ -138,7 +138,7 @@ section {
 		padding: 0 auto;
 		position: absolute;
 
-		top: 50vh;
+		top: 40vh;
 
 		width: 76%;
 		transition-duration: .3s;
@@ -147,7 +147,7 @@ section {
 
 	.button-a:hover {
 
-		top: calc(50vh - 1%);
+		top: calc(40vh - 1%);
 		width: 80%;
 		transition-duration: .3s;
 		transition-timing-function: ease-out;
@@ -155,7 +155,7 @@ section {
 
 	.title-svg {
 
-		max-width: 85%;
+		max-width: 79%;
 	}
 
 
@@ -169,7 +169,7 @@ section {
 	background-color: #121f4b;
 
 	#goals {
-		top:25vh;
+		top: calc(20vh);
 		width: 170%;
 
 		margin-left: -35%;
@@ -197,7 +197,7 @@ section {
 	#pinata-02 {
 
 		width: 88%;
-		top:-5%;
+		top:-6%;
 	}
 
 	#pinata-p1, #pinata-p2 {
@@ -213,7 +213,7 @@ section {
 	#sunrise {
 
 		height: 100%;
-		margin-left: -113%
+		margin-left: -109%
 
 	}
 
@@ -231,7 +231,7 @@ section {
 
 		width: 90%;
 
-		top: 25%;
+		top: 20%;
 	}
 
 }
@@ -244,19 +244,19 @@ section {
 
 		width: 90%;
 
-		margin-top: 30%;
+		margin-top: 15%;
 	}
 
 	#s6-p1 {
 
 			text-align: center;
-			top: 32vh;
+			top: 22vh;
 
 		}
 
 	#bjf {
 
-		top: 50vh;
+		top: 40vh;
 
 		text-align: center;
 
