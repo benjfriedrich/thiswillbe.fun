@@ -1077,11 +1077,18 @@ class Animate {
 	};
 
 
-
-
 };
 
 
+
+function preventScroll() {
+
+	document.onTouchMove = function() {
+
+		preventDefault();
+	};
+
+};
 
 
 
@@ -1093,6 +1100,9 @@ window.onload = function() {
 	storyEngine = new StoryEngine();
 
 	animate.scrollToTop();
+
+preventScroll();
+
 
 };
 
