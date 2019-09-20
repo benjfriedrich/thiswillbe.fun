@@ -1088,6 +1088,8 @@ function preventScroll() {
 		preventDefault();
 	};
 
+	document.querySelector('#s1').style.backgroundColor = '#dddddd';
+
 };
 
 
