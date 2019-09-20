@@ -1119,6 +1119,9 @@ window.onunload = function(){ animate.scrollToTop(); }
 window.addEventListener("touchmove", function(event) {
     event.preventDefault();
     event.stopPropagation();
+    document.querySelector('#s1').style.backgroundColor = '#dddddd';
+
+
 }, false);
 
 
