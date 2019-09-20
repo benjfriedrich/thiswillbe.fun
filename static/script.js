@@ -1116,7 +1116,7 @@ window.onunload = function(){ animate.scrollToTop(); }
 // 	};
 
 
-document.body.addEventListener("touchmove", function(event) {
+window.addEventListener("touchmove", function(event) {
     event.preventDefault();
     event.stopPropagation();
 }, false);
