@@ -1101,7 +1101,9 @@ window.onload = function() {
 	animate = new Animate(); 
 	storyEngine = new StoryEngine();
 
-	animate.scrollToTop();
+	// animate.scrollToTop();
+
+	setTimeout(function () { window.scrollTo(0, 1); }, 1000);
 
 
 
