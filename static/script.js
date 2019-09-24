@@ -1105,9 +1105,20 @@ function setWindowWidth() {
 
 	console.log(sections.length);
 
-	for (i = 0; i < sections.length; i++)
+	var i;
 
-		sections[i].style.width=height;
+	for (i = 0; i < sections.length; i++) {
+
+		console.log(height);
+
+		console.log(sections[i].style.height);
+
+
+		sections[i].style.height = height + 'px';
+
+		console.log(sections[i].style.height);
+
+	};
 
 	
 };
