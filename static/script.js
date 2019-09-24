@@ -1093,6 +1093,26 @@ function preventScroll() {
 };
 
 
+function setWindowWidth() {
+
+
+	var height = document.documentElement.clientHeight;
+
+
+	console.log('window height =' + height);
+
+	var sections = document.querySelectorAll('.fill-page')
+
+	console.log(sections.length);
+
+	for (i = 0; i < sections.length; i++)
+
+		sections[i].style.width=height;
+
+	
+};
+
+
 
 
 
@@ -1104,6 +1124,8 @@ window.onload = function() {
 	// animate.scrollToTop();
 
 	setTimeout(function () { window.scrollTo(0, 1); }, 1000);
+
+	setWindowWidth();
 
 
 
