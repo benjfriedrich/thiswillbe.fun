@@ -1134,7 +1134,7 @@ window.onload = function() {
 
 	// animate.scrollToTop();
 
-	setTimeout(function () { window.scrollTo(0, 1); }, 1000);
+	setTimeout(function () {animate.scrollToTop();}, 1000);
 
 	setWindowWidth();
 

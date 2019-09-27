@@ -36,13 +36,13 @@ p {
 
 .bottom {
 		position: absolute;
-		bottom: 120px;
+		bottom: 0px;
 	}
 
 .bottom-alt {
 
 position: absolute;
-		bottom: 85px;
+		bottom: 0px;
 	
 
 }
@@ -124,7 +124,7 @@ section {
 
 	width: 13%;
 
-	bottom: 80px;
+	bottom: 10px;
 
 }
 
@@ -136,8 +136,11 @@ section {
 
 	.having-fun {
 
-		bottom: 70px;
-		width: 80%;
+		bottom: 15vh;
+
+		max-width: 96%;
+	
+		height: 66vh;
 
 	}
 	
@@ -163,7 +166,7 @@ section {
 
 	.title-svg {
 
-		max-width: 79%;
+		height: 50vh;
 	}
 
 
