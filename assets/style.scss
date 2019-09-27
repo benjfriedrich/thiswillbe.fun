@@ -136,7 +136,7 @@ section {
 
 	.having-fun {
 
-		bottom: 15px;
+		bottom: 7px;
 		height: 66vh;
 
 		max-width: 96%;	
@@ -149,6 +149,11 @@ section {
 	max-width: 100%;
 
 
+	}
+
+	.title-svg {
+
+		height: 45vh;
 	}
 	
 	.button-a {
@@ -171,10 +176,7 @@ section {
 		transition-timing-function: ease-out;
 		}
 
-	.title-svg {
-
-		height: 50vh;
-	}
+	
 
 
 }
