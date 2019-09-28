@@ -1133,10 +1133,10 @@ window.onload = function() {
 	storyEngine = new StoryEngine();
 
 	// animate.scrollToTop();
-
+	setWindowWidth();
 	setTimeout(function () {animate.scrollToTop();}, 1000);
 
-	setWindowWidth();
+	
 
 
 
