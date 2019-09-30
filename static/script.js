@@ -999,7 +999,7 @@ class Animate {
 		.add ({
 
 			targets: '#bjf',
-			translateY: '18vh',
+			translateY: '16vh',
 			duration: 600,
 			easing: 'easeOutSine',
 
