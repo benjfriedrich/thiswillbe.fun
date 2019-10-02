@@ -1139,8 +1139,14 @@ function centerSunset() {
 
 	var move = rDiff * w;
 
+	var move2 = rDiff * 100 * 2;
 
-	document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
+
+console.log("move2 = " + move2);
+
+	// document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
+
+	document.querySelector('#sunrise').style.marginLeft ="-" + move2 + 'vw';
 
 }
 

@@ -428,9 +428,14 @@ section {
 	.bjfAnim {
 
 
-/*		transform: translateY(19vh);*/
 
 		transition: .5s ease-out;
+
+		@media screen and (max-width: $desktop-break) {
+		
+					transform: translateY(16vh)!important;
+		
+				}
 
 		@media screen and (min-width: $desktop-break) {
 		
