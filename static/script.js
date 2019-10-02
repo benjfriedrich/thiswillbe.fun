@@ -992,19 +992,22 @@ class Animate {
 			opacity: 0,
 			duration: 100,
 			delay: 2000,
+
+				complete: function(anim) {
+
+				console.log("bjfAnim");
+
+				document.querySelectorAll('#bjf')[0].classList.add("bjfAnim");
+			},
+
+	
 			
 	
 		})
 
-		.add ({
 
-			targets: '#bjf',
-			translateY: '16vh',
-			duration: 600,
-			easing: 'easeOutSine',
 
-		})
-
+	
 		.add ({
 
 			targets: '.twbf .st-twbf-0', 
@@ -1124,6 +1127,23 @@ function setWindowWidth() {
 };
 
 
+function centerSunset() {
+
+	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+	var r = w/h;
+	var sr = 1.69;
+
+	var rDiff = (sr-r)/2;
+
+	var move = rDiff * w;
+
+
+	document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
+
+}
+
 
 
 
@@ -1132,11 +1152,11 @@ window.onload = function() {
 	animate = new Animate(); 
 	storyEngine = new StoryEngine();
 
-	// animate.scrollToTop();
 	setWindowWidth();
 	setTimeout(function () {animate.scrollToTop();}, 1000);
+		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
 
-	
+	centerSunset();
 
 
 

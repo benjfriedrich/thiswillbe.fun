@@ -1,3 +1,5 @@
+$desktop-break: 800px;
+
 html {
 
 	padding: 0;
@@ -28,6 +30,26 @@ p {
 		font-size: 22pt;
 	}
 
+	@media screen and (min-width: $desktop-break) {
+	
+				font-size: 24pt;
+	
+			}
+
+}
+
+.narration {
+
+
+  margin-left: auto; 
+  margin-right: auto;
+
+  max-width: 550px;
+
+  	position: absolute; 
+  left: 0; 
+  right: 0; 
+
 }
 
 
@@ -37,6 +59,13 @@ p {
 .bottom {
 		position: absolute;
 		bottom: 42px;
+
+
+		@media screen and (min-width: $desktop-break) {
+		
+					bottom: 7vh;
+		
+				}
 	}
 
 .bottom-alt {
@@ -126,6 +155,12 @@ section {
 
 	bottom: 10px;
 
+	@media screen and (min-width: $desktop-break) {
+	
+				max-height: 4vh;
+	
+			}
+
 }
 
 
@@ -141,6 +176,13 @@ section {
 
 		max-width: 96%;	
 
+		@media screen and (min-width: $desktop-break) {
+		
+					bottom: 2vh;
+					height: 75vh;
+		
+				}
+
 	}
 
 	.having-fun-art {
@@ -154,6 +196,12 @@ section {
 	.title-svg {
 
 		height: 45vh;
+
+		@media screen and (min-width: $desktop-break) {
+		
+					height: 50vh;
+		
+				}
 	}
 	
 	.button-a {
@@ -163,10 +211,21 @@ section {
 
 		top: 40vh;
 
+
+
 		width: 76%;
 		transition-duration: .3s;
 		transition-timing-function: ease-out;
+		
+
+		@media screen and (min-width: $desktop-break) {
+
+			top: 47vh;
+			width: 40vh;
+
 		}
+
+	}
 
 	.button-a:hover {
 
@@ -174,6 +233,14 @@ section {
 		width: 80%;
 		transition-duration: .3s;
 		transition-timing-function: ease-out;
+		
+		@media screen and (min-width: $desktop-break) {
+
+				width: 44vh;	
+				top: calc(47vh - 1%);
+		
+				}
+
 		}
 
 	
@@ -193,12 +260,23 @@ section {
 		width: 170%;
 
 		margin-left: -35%;
-	}
 
-	#goals-p3 {
-
+	@media screen and (min-width: $desktop-break) {
+					
+		position: absolute; 
+		margin-left: auto; 
+  		margin-right: auto;
+  		left: 0; 
+  		right: 0; 
 		
+  		width: 100%;
+		max-width: 1000px;
+		top: 16vh;
+		
+		}	
+
 	}
+
 
 
 
@@ -213,11 +291,31 @@ section {
 		width: 70%;
 		bottom: 26vh;
 
+		@media screen and (min-width: $desktop-break) {
+		
+					max-width: 600px;
+
+					bottom: 17vh;
+
+					height: 120%;
+		
+				}
+
 	}
 	#pinata-02 {
 
 		width: 85%;
 		bottom: 26vh;
+
+		@media screen and (min-width: $desktop-break) {
+		
+					max-width: 600px;
+
+					bottom: 17vh;
+
+					height: 100%;
+		
+				}
 	}
 
 	#pinata-p1, #pinata-p2 {
@@ -233,7 +331,15 @@ section {
 	#sunrise {
 
 		height: 100%;
+		min-width: 100%;
 	margin-left: -50vh;
+
+	@media screen and (min-width: $desktop-break) {
+		
+					margin-left: 0px;
+					margin-right: auto;
+		
+				}
 
 	}
 
@@ -252,6 +358,12 @@ section {
 		width: 90%;
 
 		top: 22vh;
+
+		@media screen and (min-width: $desktop-break) {
+		
+					max-width: 500px;
+		
+				}
 	}
 
 }
@@ -262,9 +374,15 @@ section {
 
 	#twbf {
 
-		width: 90%;
+		max-width: 90%;
 
 		bottom: 36vh;
+
+		@media screen and (min-width: $desktop-break) {
+		
+					max-height: 85vh;
+					bottom: 10vh;
+				}
 	}
 
 	#s6-p1 {
@@ -280,7 +398,14 @@ section {
 
 		text-align: center;
 
+		@media screen and (min-width: $desktop-break) {
+		
+					max-width: 400px;
 
+					position: absolute;
+					
+		
+				}
 
 		#name {
 
@@ -300,9 +425,34 @@ section {
 
 	}
 
+	.bjfAnim {
+
+
+/*		transform: translateY(19vh);*/
+
+		transition: .5s ease-out;
+
+		@media screen and (min-width: $desktop-break) {
+		
+					/*margin-right: 0px;*/
+
+					transform: translateX(35vw) translateY(16vh)!important;
+					
+		
+				}
+
+
+	}
+
 	#sig {
 
 		width: 18%;
+
+		@media screen and (min-width: $desktop-break) {
+		
+					width: 27%;
+		
+				}
 	}
 
 	#learn-more {
