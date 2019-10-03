@@ -1146,7 +1146,7 @@ console.log("r = " + r + " sr = " + sr);
 
 		console.log("TALL DEVICE");
 
-		rDiff = (sr - r);
+		rDiff = (sr - r) * .95;
 	};
 
 	var move = rDiff * w;
