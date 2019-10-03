@@ -1131,25 +1131,24 @@ function setWindowHeight() {
 
 function centerSunset() {
 
-	var w = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
-	var h = Math.min(document.documentElement.clientHeight, window.innerHeight || 0);
+	var w = document.documentElement.clientWidth;
+	var h = document.documentElement.clientHeight;
+
+
 
 	var r = w/h;
 	var sr = 1.69;
 
-	var rDiff = (sr-r)/2;
+
 
 console.log("r = " + r + " sr = " + sr);
 
+console.log("w = " + w + " h = " + h);
 
-	if (r < sr) {
+var move = ( ( (h * sr) - w) / 2 ) * 1.06;
 
-		console.log("TALL DEVICE");
-
-		rDiff = (sr - r) * .95;
-	};
-
-	var move = rDiff * w;
+console.log("move = " + move);
+	
 
 	document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
 
