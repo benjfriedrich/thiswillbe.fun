@@ -1131,8 +1131,8 @@ function setWindowHeight() {
 
 function centerSunset() {
 
-	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	var h = Math.max( window.innerHeight || 0);
+	var w = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
+	var h = Math.min(document.documentElement.clientHeight, window.innerHeight || 0);
 
 	var r = w/h;
 	var sr = 1.69;
