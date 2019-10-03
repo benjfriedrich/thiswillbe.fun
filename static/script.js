@@ -73,6 +73,8 @@ var storyStructure = [
 
 // TEMP LOAD ZONE
 
+storyEngine.storySpot = 4;
+
     
 
     },
@@ -1096,7 +1098,7 @@ function preventScroll() {
 };
 
 
-function setWindowWidth() {
+function setWindowHeight() {
 
 
 	var height = document.documentElement.clientHeight;
@@ -1137,16 +1139,19 @@ function centerSunset() {
 
 	var rDiff = (sr-r)/2;
 
-	var move = rDiff * w;
-
-	var move2 = rDiff * 100 * 2;
+console.log("r = " + r + " sr = " + sr);
 
 
-console.log("move2 = " + move2);
+	if (r < sr) {
 
-	// document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
+		console.log("TALL DEVICE");
 
-	document.querySelector('#sunrise').style.marginLeft ="-" + move2 + 'vw';
+		rDiff = (sr - r);
+	};
+
+	var move = rDiff * w - 22;
+
+	document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
 
 }
 
@@ -1158,7 +1163,7 @@ window.onload = function() {
 	animate = new Animate(); 
 	storyEngine = new StoryEngine();
 
-	setWindowWidth();
+	setWindowHeight();
 	setTimeout(function () {animate.scrollToTop();}, 1000);
 		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
 
