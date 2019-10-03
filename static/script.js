@@ -1145,7 +1145,7 @@ console.log("r = " + r + " sr = " + sr);
 
 console.log("w = " + w + " h = " + h);
 
-var move = ( ( (h * sr) - w) / 2 ) * 1.06;
+var move = ( ( (h * sr) - w) / 1.85 );
 
 console.log("move = " + move);
 	
