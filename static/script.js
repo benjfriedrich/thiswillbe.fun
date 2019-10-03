@@ -73,7 +73,7 @@ var storyStructure = [
 
 // TEMP LOAD ZONE
 
-// storyEngine.storySpot = 4;
+storyEngine.storySpot = 4;
 
     
 
@@ -1132,7 +1132,7 @@ function setWindowHeight() {
 function centerSunset() {
 
 	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+	var h = Math.max( window.innerHeight || 0);
 
 	var r = w/h;
 	var sr = 1.69;
