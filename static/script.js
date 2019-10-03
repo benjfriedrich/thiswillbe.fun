@@ -73,7 +73,7 @@ var storyStructure = [
 
 // TEMP LOAD ZONE
 
-storyEngine.storySpot = 4;
+// storyEngine.storySpot = 4;
 
     
 
