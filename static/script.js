@@ -1149,7 +1149,7 @@ console.log("r = " + r + " sr = " + sr);
 		rDiff = (sr - r);
 	};
 
-	var move = rDiff * w - 22;
+	var move = rDiff * w;
 
 	document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
 
