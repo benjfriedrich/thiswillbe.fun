@@ -392,6 +392,13 @@ section {
 			text-align: center;
 			top: 22vh;
 
+
+			@media screen and (min-width: $desktop-break) {
+			
+						top: 40vh;
+			
+			}
+
 		}
 
 	#bjf {

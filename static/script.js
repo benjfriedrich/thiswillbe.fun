@@ -75,8 +75,6 @@ var storyStructure = [
 
 // storyEngine.storySpot = 4;
 
-    
-
     },
     
     function() {
@@ -1086,6 +1084,8 @@ class Animate {
 
 
 
+
+
 function preventScroll() {
 
 	document.onTouchMove = function() {
@@ -1126,6 +1126,15 @@ function setWindowHeight() {
 	};
 
 	
+};
+
+
+function reframe() {
+
+	var storySpotDivs =  ['s1','s1','s2','s2','s3','s4','s4','s5','s5','s6'];
+
+	animate.scrollTo(storySpotDivs[storyEngine.storySpot]);
+
 };
 
 
@@ -1173,7 +1182,13 @@ window.onload = function() {
 
 };
 
-window.onunload = function(){ animate.scrollToTop(); }
+window.onunload = function(){ animate.scrollToTop(); };
+
+window.addEventListener("resize", function() {
+	setWindowHeight();
+	centerSunset();
+	reframe();
+});
 
 
 
