@@ -1,0 +1,52 @@
+$main-color: white;
+$secondary-color: #121F4B;
+
+$main-font: brandon-grotesque, deva-ideal;
+$h-font: deva-ideal;
+
+html {
+
+	padding: 0;
+	margin: 0;
+}
+
+body {
+
+background-color: $main-color;
+
+padding: 4%;
+
+}
+
+p {
+
+
+
+font-family: $main-font, sys-tt, sans-serif;
+color: $secondary-color;
+
+font-size: 15pt;
+line-height: 21pt;
+
+
+
+margin-bottom: 15px;
+
+
+}
+
+
+h1, h2, h3 {
+
+font-family: $main-font, sans-serif;
+
+font-weight: 700; 
+color: $secondary-color;
+
+font-size: 30pt;
+
+line-height: 34pt;
+
+
+}
+
