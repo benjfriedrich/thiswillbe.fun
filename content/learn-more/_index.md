@@ -8,7 +8,7 @@ layout: learn-more
 
 My philosophy of web design is simple. Websites should be fun. 
 
-Obviously your website should be functional and easy to use. 
+Obviously websites should be functional and easy to use. 
 
 That's first. But that's boring. You can do better. 
 
@@ -54,7 +54,7 @@ Guess what. No one has a perfect conection.
 
 One thing that is not fun is waiting for a site to load.
 
-## Full-Stack Creative
+## Full-Stack, except different
 
 'Full-stack' is a term from the development world for a developer who is skilled at every level of development. 
 
@@ -66,23 +66,34 @@ To create a smooth, cohesive experience that is fast and fun, a project needs to
 
 I’ve invested a lot of time developing expertise in the breadth of creative and technical disciplines that go into creating a cohesive online experience. 
 
-That means UI/UX design, graphic design, illustration, photography, animation, copywriting, and front-end development (HTML/CSS/JS and templating).
+That means UI/UX design, graphic design, illustration, photography, animation, copywriting, and front-end development.
 
-It seems like a small thing, but being able harmonize those skills enables me to create compelling, fun work without having to rely on a modular team of specialists, and it unlocks really cool things. 
+Being able harmonize those skills enables me to create compelling, fun work without having to rely on a modular team of specialists, and it unlocks really cool things. 
 
-Take, for instance, the humble SVG… 
+That's really abstract, though. Let me tell you about something more specific.
 
-## All hale the SVG
+## Take, for instance, the humble SVG…
 
 Oh. You might not know what an SVG is. 
 
-An SVG is a type of image format that all web browsers can read that stores vectors instead of bitmaps. That means instead of containing a bunch of pixels, it contains instructions for your computer to draw lines and shapes and color them in. 
+An SVG is a type of image format that contains instructions for your computer to draw lines and shapes. 
 
-SVG images are incredibly small, infinitely resizable, and can be manipulated in real-time using css and javascript. *They take up virtually no space and you can animate them.* That sounds amazing, but they are highly underused, because neither web-devs or illustrators really know how to take advantage of them on their own. 
+Most images you see online aren't like this. They're made of pixel data.
 
-People mostly just use SVGs for little UI components—logos, buttons, and icons. When they want to create a creatively expressive site they fall back to using bulky components—high-res JPG images, GIF animations, and MP4 video files—which add up quickly in digital weight.
+SVGs are awesome, because they are are incredibly small, infinitely resizable, and can be manipulated in real-time using css and javascript. 
 
-The possibility of the SVG doesn’t become apparent unless you both have the creative vision of an illustrator and the technical know-how of a frontend dev. That’s how this site is only 678kb and still does a great job of communicating in a beautiful, interactive way. Being a full-stack creative is about harmonizing creative vision with technical constraint.
+*They take up virtually no space and you can animate them.*
+
+That sounds amazing, but they are highly underused because neither web-devs or illustrators really know how to take advantage of them by themselves.
+
+The possibility of the SVG isn't obivious unless you have artisic eye of an illustrator and the technical know-how of a frontend dev. 
+
+There are lots of reasons for this, but the simplest is that SVGs often aren't the most convient or obivous tool to use for either devs or creatives. But the techinal attributes of the file-type let you do stuff that's hard to replicate without making your site huge.
+
+High-res JPGs, GIF animations, and MP4 video files are nice and it's not wrong to use them, but they do add up quickly in digital weight.
+
+Being a full-stack creative is about harmonizing creative vision with technical constraint. Hence, a beautiful *and* perfomant website.
+
 
 ## Pretty Cool, huh
 
