@@ -1,14 +1,43 @@
   <!DOCTYPE html>
 
-  <html>
+<html>
 <body>
+
+<main>
 
   {{ partial "html-head-alt.html" . }}
 
   <title>{{ .Site.Title }}</title>
 
-{{ .Content }}
+	<section id="about-me">
 
+	{{ with .Site.GetPage "/learn-more/about-me.md" }}
+
+	{{ .Content }}
+
+	{{ end }}
+
+
+</section>
+
+<section id="specs">
+
+
+	{{ with .Site.GetPage "/learn-more/specs.md" }}
+
+	{{ .Content }}
+
+	{{ end }}
+
+
+
+</section>
+
+
+</main>
 
 </html>
+
+<script type="text/javascript" src="/script2.js"></script>
+
 </body>

@@ -1,5 +1,8 @@
 $main-color: white;
 $secondary-color: #121F4B;
+$tertiary-color: rgb(251, 94, 88);
+$desktop-break: 800px;
+
 
 $main-font: brandon-grotesque, deva-ideal;
 $h-font: deva-ideal;
@@ -13,8 +16,35 @@ html {
 body {
 
 background-color: $main-color;
+color: $secondary-color;
 
-padding: 4%;
+	padding: 0;
+	margin: 0;
+}
+
+
+main {
+
+
+	 
+
+
+}
+
+section {
+
+	padding: 20px 4% 0;
+
+
+	@media screen and (min-width: $desktop-break) {
+  
+
+  	
+  		padding: 0 20vw;
+  			
+  
+  		}
+
 
 }
 
@@ -23,7 +53,6 @@ p {
 
 
 font-family: $main-font, sys-tt, sans-serif;
-color: $secondary-color;
 
 font-size: 15pt;
 line-height: 21pt;
@@ -31,6 +60,12 @@ line-height: 21pt;
 
 
 margin-bottom: 15px;
+
+@media screen and (min-width: $desktop-break) {
+
+			
+
+		}
 
 
 }
@@ -41,12 +76,60 @@ h1, h2, h3 {
 font-family: $main-font, sans-serif;
 
 font-weight: 700; 
-color: $secondary-color;
+
 
 font-size: 30pt;
 
 line-height: 34pt;
 
+
+}
+
+
+h3 {
+
+	font-size: 21pt;
+	line-height: 24pt;
+
+}
+
+.is-hidden {
+
+	display: none;
+}
+
+#specs {
+	padding-top: 30px;
+	padding-bottom: 20px;
+
+	background-color: $tertiary-color;
+
+	color: $secondary-color;
+
+
+
+	h2 {
+
+		color: $main-color;
+	}
+
+	h3 {
+
+		text-indent: 1em;
+
+		color: $secondary-color;
+		transition: .1s;
+	}
+
+	.subhead:hover {
+
+		text-indent: 0em;
+	 	scale: 1.1;
+		text-decoration: underline;
+
+
+		transition-duration: .2s;
+	}
 
 }
 
