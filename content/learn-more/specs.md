@@ -51,9 +51,9 @@ I’m an Adobe guy, so my design workflow revolves around Illustrator and Indesi
 
 ### UI/UX Design
 
-**UI/UX design is about creating natural, beautiful interactions.** I don’t focus on complicated framework-driven web-apps, so **my goal is usually to make the “interface” for a website as invisible as possible.** I categorize this as a creative discipline, but having an extensive technical knowledge base is really important in designing interfaces that work for both the developer and the user.
+UI/UX design is about creating **natural, beautiful interactions.** I don’t focus on complicated framework-driven web-apps, so **my goal is usually to make the “interface” for a website as invisible as possible.** I categorize this as a creative discipline, but having an extensive technical knowledge base is really important in designing interfaces that work for both the developer and the user.
 
-A good example of a UI that I designed is the online store for my favorite coffee shop, Euphoria in West Union, IA. 
+A good example of a UI that I designed is the online store for my favorite coffee shop, [Euphoria Coffee](https://drinkeuphoria.coffee) in West Union, IA. 
 
 ### Digital Illustration
 
