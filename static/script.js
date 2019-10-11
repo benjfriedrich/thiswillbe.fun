@@ -296,7 +296,7 @@ class Animate {
 
 		console.log("container = " + container);
 
-		console.log("element = " + element);
+		console.log("element.offsetTop = " + element.offsetTop);
 		container.scrollTop = element.offsetTop;
 	};
 
