@@ -74,12 +74,9 @@ class TextRevealer {
 				 		node.lastElementChild.innerHTML = ' &ndash;'
 				 	} else {
 
-				 	node.lastElementChild.innerHTML = ' +'
+				 	node.lastElementChild.innerHTML = ' +';
 
 				 };
-
-				 
-			
 			});
 
 		};

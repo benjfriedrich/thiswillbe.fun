@@ -290,9 +290,13 @@ class Animate {
 
 	scrollTo(scrollTarget) {
 
-		console.log(scrollTarget);
+		console.log("scroll target = " + scrollTarget);
 		var container = document.body;
 		var element = document.getElementById(scrollTarget);
+
+		console.log("container = " + container);
+
+		console.log("element = " + element);
 		container.scrollTop = element.offsetTop;
 	};
 
