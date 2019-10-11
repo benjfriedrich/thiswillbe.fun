@@ -299,7 +299,7 @@ class Animate {
 		console.log("element.offsetTop = " + element.offsetTop);
 		// container.scrollTop = element.offsetTop;
 
-		container.scrollTo(0,element.offsetTop);
+		scrollTo(0,element.offsetTop);
 	};
 
 	scrollToNext() {
