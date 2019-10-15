@@ -16,6 +16,9 @@ But any time one of your goals is get people excited about you, it’s important
 
 You do this by having fun.
 
+
+![Alt text](/images/what-even.svg)
+
 ## Ummm...what even does that mean?
 
 Fun! Just make your site fun. There's no formula. 
@@ -32,6 +35,8 @@ Sometimes it might not even be part of the web design itself. If the site is bui
 
 But your site can't just be fun. It needs to be fast too.
 
+![Alt text](/images/very-small.svg)
+
 ## This entire website is 654kb. That's very small.
 
 That’s kilobytes. The one that’s smaller than megabytes. 
@@ -47,6 +52,8 @@ Being fun doesn’t mean building a bulky, boorish website that *might* be fun i
 Guess what. No one has a perfect conection.
 
 One thing that is not fun is waiting for a site to load.
+
+![Alt text](/images/full-stack.svg)
 
 ## Full-Stack, except different
 
@@ -65,6 +72,8 @@ That means UI/UX design, graphic design, illustration, photography, animation, c
 Being able harmonize those skills enables me to create compelling, fun work without having to rely on a modular team of specialists, and it unlocks really cool things. 
 
 That's really abstract, though. Let me tell you about something more specific.
+
+![Alt text](/images/svg.svg)
 
 ## Take, for instance, the humble SVG…
 
@@ -90,6 +99,7 @@ High-res JPGs, GIF animations, and MP4 video files are nice and it's not wrong t
 
 Being a full-stack creative is about harmonizing creative vision with technical constraint. Hence, beautiful *and* perfomant websites.
 
+![Alt text](/images/so-cool.svg)
 
 ## Pretty cool, huh
 
@@ -103,6 +113,8 @@ It's a demo site. But I think it’s cool how tight you can make a site if you w
 
 There are lots of other ways to harmonize technical knowledge with creative vision. But one example is enough. I don't want to bore you.
 
+
+![Alt text](/images/builder.svg)
 
 ## Let's make something
 
