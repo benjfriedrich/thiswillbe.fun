@@ -48,6 +48,8 @@ section {
 
 }
 
+
+
 p {
 
 
@@ -120,6 +122,43 @@ img {
 
 	max-height: 40vh;
 	margin-top: 1vh;
+}
+
+#about-me {
+
+	margin-bottom: 75px;
+}
+
+#contact {
+
+	background-color: $secondary-color;
+
+	padding-bottom: 30px;
+	padding-top: 30px;
+
+	color: $tertiary-color;
+	a {
+
+		color: $tertiary-color;
+	}
+
+}
+
+#contact-info {
+
+
+
+		font-size: 20pt;
+		line-height: 30pt;
+
+		padding-left: 1em;
+}
+
+#name {
+
+	color: white;
+	font-size: 30pt;
+	padding-bottom: 20px;
 }
 
 #specs {

@@ -17,7 +17,7 @@ But any time one of your goals is get people excited about you, it’s important
 You do this by having fun.
 
 
-![Alt text](/images/what-even.svg)
+![Confused](/images/what-even.svg)
 
 ## Ummm...what even does that mean?
 
@@ -35,7 +35,7 @@ Sometimes it might not even be part of the web design itself. If the site is bui
 
 But your site can't just be fun. It needs to be fast too.
 
-![Alt text](/images/very-small.svg)
+![Floppy Disk](/images/very-small.svg)
 
 ## This entire website is 654kb. That's very small.
 
@@ -53,7 +53,7 @@ Guess what. No one has a perfect conection.
 
 One thing that is not fun is waiting for a site to load.
 
-![Alt text](/images/full-stack.svg)
+![Image of a git command, except with art instead of code](/images/full-stack.svg)
 
 ## Full-Stack, except different
 
@@ -73,11 +73,11 @@ Being able harmonize those skills enables me to create compelling, fun work with
 
 That's really abstract, though. Let me tell you about something more specific.
 
-![Alt text](/images/svg.svg)
+![Me loving SVGs](/images/svg.svg)
 
 ## Take, for instance, the humble SVG…
 
-Oh. You might not know what an SVG is. 
+Oh. You might not know what an SVG is. They're one of the coolest, undersung tools of the web.
 
 An SVG is a type of image format that contains instructions for your computer to draw lines and shapes. 
 
@@ -87,19 +87,13 @@ SVGs are awesome, because they are are incredibly small, infinitely resizable, a
 
 *They take up virtually no space and you can animate them.*
 
-That sounds amazing, but they are underused because neither frontend developers nor illustrators really know how to take advantage of them by themselves.
-
 The possibility of the SVG isn't obivious unless you have both the artisic eye of an illustrator and the technical know-how of a frontend dev. 
-
-There are lots of reasons for this, but the simplest is that SVGs often aren't the most obivous tool to use for either devs or creatives. 
 
 But if you're looking at creative and devlopement as being conected, the techinal attributes of the SVG file-type let you do stuff that's hard to replicate without making your site huge.
 
-High-res JPGs, GIF animations, and MP4 video files are nice and it's not wrong to use them, but they do add up quickly in digital weight.
-
 Being a full-stack creative is about harmonizing creative vision with technical constraint. Hence, beautiful *and* perfomant websites.
 
-![Alt text](/images/so-cool.svg)
+![Me being cool](/images/so-cool.svg)
 
 ## Pretty cool, huh
 
@@ -114,7 +108,7 @@ It's a demo site. But I think it’s cool how tight you can make a site if you w
 There are lots of other ways to harmonize technical knowledge with creative vision. But one example is enough. I don't want to bore you.
 
 
-![Alt text](/images/builder.svg)
+![Me with hammer](/images/builder.svg)
 
 ## Let's make something
 
