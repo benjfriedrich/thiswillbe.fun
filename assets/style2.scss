@@ -152,6 +152,12 @@ img {
 		line-height: 30pt;
 
 		padding-left: 1em;
+
+			a:hover {
+
+		color: white;
+		text-decoration: none;
+	}
 }
 
 #name {
@@ -208,6 +214,7 @@ img {
 
 
 		transition-duration: .2s;
+		cursor: pointer;
 	}
 
 }

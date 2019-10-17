@@ -38,6 +38,21 @@ I claim no expertise in building out complicated, high-load back-ends, but for s
 
 Depending on the client, there are times when the best solution is actually a service like **Squarespace**. It's limiting in lots of ways, but if you play by its rules, Sqaurespace can empower clients who need something made quickly that can be modified easily.
 
+### Examples
+
+*Almost* every line of code on this site is me, but here are a few other sites I've worked on that are cool. I've been pivoting back to web-design recently, so I'm rebuilding my professional portfio from scratch:
+
+[Euphoria Coffee](https://drinkeuporia.coffee): A JAMstack site with a snipcart powered online store.
+
+
+[Friedrich Design Co](https://friedrichdesign.co): My buisness site.
+
+[BNJMN](https://BNJMN.US): My personal site.
+
+[52 Failures](https://52failures.com): A site I built for my 2019 poetry project.
+
+[Chess Foundry](https://thechessfoundry.com): A site showcasesing my digital chess set design hobby.
+
 
 ## Creative Skills
 

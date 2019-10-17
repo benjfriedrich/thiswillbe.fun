@@ -1,4 +1,6 @@
-baseURL = ""
+baseURL = "https://thiswillbe.fun"
 languageCode = "en-us"
 title = "This Will Be Fun"
 
+[params]
+  description = "A website about websites. A showcase for the work of Benjamin Friedrich."
