@@ -804,15 +804,27 @@ class Animate {
 			translateY: 600,
 			easing: 'easeOutQuad',
 			duration: 800,
+			endDelay: 500,
 
 			 complete: function(anim) {
     		
 			 	   	animate.paraSlider("#s4-p2");
-			 	   	animate.show('#down-arrow-4', 1000);
+			 	   	animate.show('#down-arrow-4', 1500);
 
   				}
 
-		});
+		})
+
+
+		// anime ({
+			
+		// 	complete: function(anim) {		 
+	 	   	
+  // 			}
+
+
+
+		// })
 
 
 
@@ -897,7 +909,7 @@ class Animate {
 
 			targets: '#xo6',
 			opacity: 1,
-			endDelay: 750,
+			endDelay: 400,
 
 			complete: function(anim) {
 
