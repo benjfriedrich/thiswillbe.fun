@@ -53,7 +53,9 @@ var storyStructure = [
     	console.log("Slide 1 a");
     	animate.scrollTo('s1');
     	animate.blinkButton();
-    	animate.dots();
+    	
+    	animate.websitesShould();
+
 
     	animate.navButton('#the-button', true);
 
@@ -310,6 +312,59 @@ class Animate {
 
 
 // First Slide
+
+
+	websitesShould() {
+
+		var tl = anime.timeline({
+  		
+		});
+		
+		tl
+
+		.add({
+
+		  targets: '#websites',
+		  opacity: 1,
+		  duration: 5,
+		  scaleY: [
+
+		  {value: 1.2, duration: 200, easing: 'easeOutExpo'},
+		  {value: 1, duration: 150, easing: 'easeOutExpo'},
+
+		  ],
+		  delay: 800
+
+		})
+			.add({
+
+		  targets: '#should-be',
+		  opacity: 1,
+		  duration: 5,
+		  scaleY: [
+
+		  {value: 1.2, duration: 200, easing: 'easeOutExpo'},
+		  {value: 1, duration: 150, easing: 'easeOutExpo'},
+
+		  ],
+		  delay: 0
+
+		})
+			.add({
+
+		  targets: '#dots',
+		  opacity: 1,
+		  duration: 5,
+		  delay: 0,
+		  complete: function(anim) {
+
+		  	    	animate.dots();
+		  }
+
+		})
+
+
+	}
 
 	dots() {
 
