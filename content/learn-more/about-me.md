@@ -37,13 +37,13 @@ But your site can't just be fun. It needs to be fast too.
 
 ![Floppy Disk](/images/very-small.svg)
 
-## This entire website is 654kb. That's very small.
+## This entire website is 219kb. That's very small.
 
 That’s kilobytes. The one that’s smaller than megabytes. 
 
 This entire website is smaller than most banner images. 
 
-*But wait...does that includes all the fun images and animations on the home page?*
+*But wait...does that include all the fun images and animations?*
 
 Yes. Those too.
 
@@ -101,9 +101,9 @@ Yeah, ok. This is nerdy. But making cool websites is nerdy.
 
 I'm not talking about SVGs because I want to give a TED talk on SVGs (which to be fair...I do want to do that). It's just one example of how technical skill and creative vision can tie together.
 
-The truth is most of my sites are not 678kb or even close. This site is a overkill in its slimness. 
+The truth is most of my sites are not 219kb or even close. This site is overkill. It's a demo site. 
 
-It's a demo site. But I think it’s cool how tight you can make a site if you want. 
+But I think it’s cool how slim you can make a site if you want. 
 
 There are lots of other ways to harmonize technical knowledge with creative vision. But one example is enough. I don't want to bore you.
 

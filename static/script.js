@@ -347,7 +347,7 @@ class Animate {
 		  {value: 1, duration: 150, easing: 'easeOutExpo'},
 
 		  ],
-		  delay: 0
+		  delay: 400
 
 		})
 			.add({
