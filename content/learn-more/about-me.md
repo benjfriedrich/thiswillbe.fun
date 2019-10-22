@@ -77,7 +77,7 @@ That's really abstract, though. Let me tell you about something more specific.
 
 ## Take, for instance, the humble SVG…
 
-Oh. You might not know what an SVG is. They're one of the coolest, undersung tools of the web.
+Oh. You might not know what an SVG is. They're one of the coolest, under-sung tools of the web.
 
 An SVG is a type of image format that contains instructions for your computer to draw lines and shapes. 
 
@@ -87,11 +87,11 @@ SVGs are awesome, because they are are incredibly small, infinitely resizable, a
 
 *They take up virtually no space and you can animate them.*
 
-The possibility of the SVG isn't obivious unless you have both the artisic eye of an illustrator and the technical know-how of a frontend dev. 
+The possibility of the SVG isn't obvious unless you have both the artistic eye of an illustrator and the technical know-how of a frontend dev. 
 
-But if you're looking at creative and devlopement as being conected, the techinal attributes of the SVG file-type let you do stuff that's hard to replicate without making your site huge.
+But if you're looking at creative and development as being connected, the technical attributes of the SVG file-type let you do stuff that's hard to replicate without making your site huge.
 
-Being a full-stack creative is about harmonizing creative vision with technical constraint. Hence, beautiful *and* perfomant websites.
+Being a full-stack creative is about harmonizing creative vision with technical constraint. Hence, beautiful *and* perfoment websites.
 
 ![Me being cool](/images/so-cool.svg)
 
