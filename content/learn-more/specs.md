@@ -90,7 +90,7 @@ My niche is being the type of guy who can go in quick and get some good shots wi
 
 There are definitely things a full-time pro photographer is better set up for than I am, but a lot of times you just need something that looks good and won’t blow your budget.
 
-I also take beautiful pictures of my cats, thought that doesn’t feel particularly germane.
+I also take beautiful pictures of my cats, which, as you well know, is a fundamental internet skill.
 
 
 ### Copywriting
