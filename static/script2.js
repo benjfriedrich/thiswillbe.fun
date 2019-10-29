@@ -3,15 +3,9 @@ class TextRevealer {
 
 	classify (id) {
 
-		console.log('classify');
-
-
 		var section = document.querySelector(id);
 
 		var sectionSize = section.childElementCount;
-
-
-		console.log('child elements = ' + sectionSize);
 
 		var subSectionCount = 0;
 		var i;
@@ -20,24 +14,18 @@ class TextRevealer {
 
 			var node = section.children[i];
 
-			console.log(i);
-
-
 			if (node.tagName == 'H3') {
 
 				subSectionCount++;
-
 				this.addEventListener(node, subSectionCount);
 
-				console.log("subsection count = " + subSectionCount);
+
 			};
 
 			if (node.tagName == 'P') {
 
 				node.classList.add('s-' + subSectionCount);
 				node.classList.add('is-hidden');
-
-				console.log("p = " + subSectionCount);
 
 			};
 
@@ -60,7 +48,6 @@ class TextRevealer {
 			node.addEventListener("click", function(){
 			
 				 var pList = document.querySelectorAll(u)
-
 				 var pCount = pList.length;
 				 var i;
 
@@ -81,12 +68,7 @@ class TextRevealer {
 
 		};
 
-
 	}
-
-
-	
-
 
 };
 

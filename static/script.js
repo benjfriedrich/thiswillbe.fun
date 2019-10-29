@@ -1,6 +1,5 @@
 
 
-// The job of storyEngine is handle the state of the story. It goes either forward or backward. It knows the order that things happen and it adds and removes listeners along that trigger it's proggression along the way.
 
 class StoryEngine {
 
@@ -497,7 +496,6 @@ class Animate {
 		var t2 = anime.timeline({
   			duration: 150,
   			delay: 500,
-  			// easing: 'easeInOutSine'
 
 		});
 		t2
@@ -535,13 +533,7 @@ class Animate {
 
 		var _func = function() { console.log('click'); 
 
-			
-
-			console.log("checkMarks ");
-
-
 			checkMarks[count].classList.toggle("is-hidden");
-
 
 			count++
 
