@@ -9,7 +9,6 @@ class StoryEngine {
 		
 		this.storySpot = 0;
 		animate.scrollToTop();
-		console.log("StoryEngine initiated");
 		storyStructure[this.storySpot]();
 
 
@@ -19,7 +18,6 @@ class StoryEngine {
 
 		this.storySpot ++;
 		this.storyLogic();
-		console.log('Forward')
 
 	};
 
@@ -27,12 +25,10 @@ class StoryEngine {
 
 		this.storySpot --;
 		this.storyLogic();
-		console.log('Backward')
 	};
 
 	storyLogic() {
 
-		console.log("storySpot = " + this.storySpot);
 		storyStructure[this.storySpot]();
 
 
@@ -49,7 +45,6 @@ class StoryEngine {
 var storyStructure = [
     function() { 
 
-    	console.log("Slide 1 a");
     	animate.scrollTo('s1');
     	animate.blinkButton();
     	
@@ -63,7 +58,7 @@ var storyStructure = [
 
     function() {
 
-    	console.log("Slide 1 b");
+
     	animate.navButton('.down-arrow', true);
     	animate.toggleArrow('s1');
     	animate.scrollTo('s1');
@@ -79,7 +74,6 @@ var storyStructure = [
     },
     
     function() {
-    	console.log("Slide 2");
     	animate.scrollTo('s2');
     	animate.toggleArrow('s1');
     	animate.paraSlider('#goals-p1');
@@ -87,7 +81,6 @@ var storyStructure = [
     },
     
     function() {
-    	console.log("Slide 2");
     	animate.scrollTo('s2');
     	animate.lightsOn();
     	animate.revealDancers();
@@ -98,7 +91,6 @@ var storyStructure = [
     },
 
     function() { 
-    	console.log("Slide 3");
     	animate.scrollTo('s3');
     	animate.pinataReveal();
     	animate.paraSlider('#pinata-p1');
@@ -108,7 +100,6 @@ var storyStructure = [
     },
 
     function() { 
-    	console.log("Slide 4");
     	animate.scrollTo('s4');
     	animate.paraSlider("#s4-p1");
     	animate.sunBlink();
@@ -116,7 +107,6 @@ var storyStructure = [
     },
 
      function() {
-    	console.log("Slide 4");
     	animate.scrollTo('s4');
     	animate.sunRise();
     	animate.navButton('#down-arrow-4', true);
@@ -124,7 +114,6 @@ var storyStructure = [
     },
 
      function() {
-    	console.log("Slide 5");
     	animate.scrollTo('s5');
     	animate.autoTicTac();
     	animate.navButton('#xo7', true);
@@ -133,14 +122,12 @@ var storyStructure = [
     },
 
      function() {
-    	console.log("Slide 5");
     	animate.scrollTo('s5');
     	animate.ticTacToe();
 
     },
 
      function() {
-    	console.log("Slide 6");
     	animate.scrollTo('s6');
    		animate.thisWillBeFun();
 
@@ -159,11 +146,11 @@ class Animate {
 
 		if (goingForward == true) {
 
-			var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.forward();};
+			var _func = function() {  button.removeEventListener('click', _func);storyEngine.forward();};
     		button.addEventListener('click', _func)
 		} else {
 
-			var _func = function() { console.log('click');  button.removeEventListener('click', _func);storyEngine.back();};
+			var _func = function() {  button.removeEventListener('click', _func);storyEngine.back();};
     		button.addEventListener('click', _func)
 
 		}
@@ -189,7 +176,6 @@ class Animate {
 
 	paraSlider(id) {
 
-		console.log("paraSlider");
 
 
 
@@ -209,7 +195,6 @@ class Animate {
 	};
 	paraHider(id) {
 
-		console.log("paraHider");
 
 		anime ({
 
@@ -279,7 +264,6 @@ class Animate {
 
 	scrollToTop() {
 
-		console.log("Scroll to Top");
 
 		window.scrollTo({
 		  top: 0,
@@ -291,20 +275,16 @@ class Animate {
 
 	scrollTo(scrollTarget) {
 
-		console.log("scroll target = " + scrollTarget);
 		var container = document.body;
 		var element = document.getElementById(scrollTarget);
 
-		console.log("container = " + container);
 
-		console.log("element.offsetTop = " + element.offsetTop);
 		// container.scrollTop = element.offsetTop;
 
 		scrollTo(0,element.offsetTop);
 	};
 
 	scrollToNext() {
-		console.log('scrollToNext');
 		var windowHeight = window.innerHeight;
 		window.scrollBy(0, windowHeight);
 	};
@@ -385,7 +365,6 @@ class Animate {
 
 	blinkButton() {
 
-		console.log('Running anime test');
 
 		var cycleSpeed = 1000;
 
@@ -426,7 +405,6 @@ class Animate {
 
 	shrinkButton() {
 
-		console.log('shrinkButton');
 
 		anime ({
 			
@@ -447,7 +425,6 @@ class Animate {
 	revealFunBadge() {
 
 
-		console.log("revealFunBadge");
 
 		anime ({
 
@@ -462,7 +439,6 @@ class Animate {
 
 	revealFunTimes() {
 
-		console.log("revealFunTimes");
 
 		var tl = anime.timeline({
   			duration: 150,
@@ -531,7 +507,7 @@ class Animate {
 
 		var count = 0;
 
-		var _func = function() { console.log('click'); 
+		var _func = function() { 
 
 			checkMarks[count].classList.toggle("is-hidden");
 
@@ -564,7 +540,6 @@ class Animate {
 
 	lightsOn() {
 
-		console.log('lightsOn');
 
 		animate.hide('#Guy_and_Shadow');
 		animate.hide('#blue');
@@ -643,7 +618,6 @@ class Animate {
 
 				if (storyEngine.storySpot !== storySpot) {
 
-					console.log("END ANIMATION");
 
 					anime.remove('#dance_guy, #dance_girl_1, #dance_girl_2');
 				}
@@ -745,9 +719,7 @@ class Animate {
 
 		var count = 0;
 
-		var _func = function() { console.log('click'); 
-
-			console.log("Pinata");
+		var _func = function() { 
 
 
 			count++
@@ -810,7 +782,6 @@ class Animate {
 
 				if (storyEngine.storySpot !== storySpot && storyEngine.storySpot !== storySpot + 1) {
 
-					console.log("END ANIMATION");
 
 					anime.remove('.st-sunrise-1');
 				}
@@ -823,7 +794,6 @@ class Animate {
 
 	sunRise() {
 
-		console.log("sunRise");
 
 
 		anime ({
@@ -881,7 +851,6 @@ class Animate {
 
 	autoTicTac() {
 
-		console.log("autoTicTac")
 
 		var t1 = anime.timeline({
 			  easing: 'linear',
@@ -972,7 +941,6 @@ class Animate {
 
 	ticTacToe() {
 
-		console.log("tictactoe");
 
 		anime ({
 			
@@ -1060,7 +1028,6 @@ class Animate {
 
 				complete: function(anim) {
 
-				console.log("bjfAnim");
 
 				document.querySelectorAll('#bjf')[0].classList.add("bjfAnim");
 			},
@@ -1114,15 +1081,12 @@ class Animate {
 	 			var text = document.querySelectorAll('.st-twbf-0');
 	 			var i;
 
-	 			console.log(text);
 
 	 			length = text.length;
 
-	 			console.log(length);
 
 	 			for (i = 0; i < length; i++) {
 
-	 				console.log(text[i]);
 	 				text[i].style.stroke='none';
 
 	 			};
@@ -1169,24 +1133,19 @@ function setWindowHeight() {
 	var height = document.documentElement.clientHeight;
 
 
-	console.log('window height =' + height);
 
 	var sections = document.querySelectorAll('.fill-page')
 
-	console.log(sections.length);
 
 	var i;
 
 	for (i = 0; i < sections.length; i++) {
 
-		console.log(height);
 
-		console.log(sections[i].style.height);
 
 
 		sections[i].style.height = height + 'px';
 
-		console.log(sections[i].style.height);
 
 	};
 
@@ -1215,13 +1174,10 @@ function centerSunset() {
 
 
 
-console.log("r = " + r + " sr = " + sr);
 
-console.log("w = " + w + " h = " + h);
 
 var move = ( ( (h * sr) - w) / 1.85 );
 
-console.log("move = " + move);
 	
 
 	document.querySelector('#sunrise').style.marginLeft ="-" + move + 'px';
@@ -1238,9 +1194,9 @@ window.onload = function() {
 
 	setWindowHeight();
 
-	animate.scrollToTop()
+	// animate.scrollToTop()
 
-	// setTimeout(function () {animate.scrollToTop();}, 1000);
+	setTimeout(function () {animate.scrollToTop();}, 1000);
 		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
 
 	centerSunset();
