@@ -1187,22 +1187,22 @@ var move = ( ( (h * sr) - w) / 1.85 );
 
 
 
-// window.onload = function() {
+window.onload = function() {
 
-// 	animate = new Animate(); 
-// 	storyEngine = new StoryEngine();
+	animate = new Animate(); 
+	storyEngine = new StoryEngine();
 
-// 	setWindowHeight();
-// 	setTimeout(function () {animate.scrollToTop();}, 1000);
-// 	animate.scrollToTop();
-
-
-// 		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
-
-// 	centerSunset();
+	setWindowHeight();
+	setTimeout(function () {animate.scrollToTop();}, 1000);
+	animate.scrollToTop();
 
 
-// };
+		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
+
+	centerSunset();
+
+
+};
 
 window.onunload = function(){ animate.scrollToTop(); };
 
