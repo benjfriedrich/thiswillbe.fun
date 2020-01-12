@@ -8,11 +8,10 @@ Mobile-first, flexible layouts.
 
 ### Javascript
 
-I'm good at javascript, but still growing. Capable of **using established libraries** and **building my own tools**. My focus is mostly on **DOM manipulation**--I don't have expertise building out elaborate API driven web apps, or anything like that.
+I'm good at javascript, but still growing. Capable of **using established libraries** and **building my own tools**. My focus is mostly on **DOM manipulation**, but I have some experince working with APIs, and some experince using Node.JS in severless functions.
 
-I stick mostly to **vanilla Javascript**, but occasionally I get into some **jQuery**.
+I stick mostly to **ES6 Javascript**, but occasionally I get into some **jQuery**. Recently I've been trasitioning to a more functional style.
 
-For most of my projects, a full javascript framework would be overkill, so I don't claim expertise in any of the primary frameworks. More coming here though.
 
 ### JAMstack
 
@@ -45,7 +44,6 @@ Depending on the client, there are times when the best solution is actually a se
 *Almost* every line of code on this site is me, but here are a few other sites I've worked on that are cool. I've been pivoting back to web-design recently, so I'm rebuilding my professional portfio from scratch:
 
 [Euphoria Coffee](https://drinkeuphoria.coffee): A JAMstack site with a snipcart powered online store.
-
 
 [Friedrich Design Co](https://friedrichdesign.co): My buisness site.
 
