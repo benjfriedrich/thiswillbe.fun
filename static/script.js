@@ -1193,10 +1193,10 @@ window.onload = function() {
 	storyEngine = new StoryEngine();
 
 	setWindowHeight();
-
+	setTimeout(function () {animate.scrollToTop();}, 1000);
 	animate.scrollToTop()
 
-	// setTimeout(function () {animate.scrollToTop();}, 1000);
+
 		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
 
 	centerSunset();
