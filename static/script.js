@@ -346,7 +346,7 @@ class Animate {
 		  {value: 1, duration: 150, easing: 'easeOutExpo'},
 
 		  ],
-		  delay: 400
+		  delay: 100
 
 		})
 			.add({
@@ -1237,7 +1237,10 @@ window.onload = function() {
 	storyEngine = new StoryEngine();
 
 	setWindowHeight();
-	setTimeout(function () {animate.scrollToTop();}, 1000);
+
+	animate.scrollToTop()
+	
+	// setTimeout(function () {animate.scrollToTop();}, 1000);
 		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
 
 	centerSunset();

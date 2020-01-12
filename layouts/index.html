@@ -7,7 +7,7 @@
 
 {{ $slides := where .Site.Pages ".Section" "slides" }}
 
-{{range after 1 $slides }}
+{{range after 0 $slides }}
 <section class="fill-page" id="{{ .Title }}">
 
 	{{ .Content }}
