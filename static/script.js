@@ -1196,7 +1196,7 @@ window.onload = function() {
 
 	// animate.scrollToTop()
 
-	setTimeout(function () {animate.scrollToTop();}, 1000);
+	// setTimeout(function () {animate.scrollToTop();}, 1000);
 		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
 
 	centerSunset();
