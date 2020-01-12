@@ -1,5 +1,7 @@
 $desktop-break: 800px;
 
+$tablet-break: 680px;
+
 html {
 
 	padding: 0;
@@ -76,7 +78,7 @@ a {
 		bottom: 42px;
 
 
-		@media screen and (min-width: $desktop-break) {
+		@media screen and (min-width: $tablet-break) {
 		
 					bottom: 7vh;
 		
@@ -87,6 +89,24 @@ a {
 
 position: absolute;
 		bottom: 10px;
+
+		@media screen and (min-width: $tablet-break) {
+
+
+			bottom: 4vh;
+		
+					
+		
+				}
+
+
+		@media screen and (min-width: $desktop-break) {
+
+			bottom: 10px;
+		
+					
+		
+				}
 	
 
 }
@@ -170,7 +190,7 @@ section {
 
 	bottom: 10px;
 
-	@media screen and (min-width: $desktop-break) {
+	@media screen and (min-width: $tablet-break) {
 	
 				max-height: 4vh;
 	
@@ -190,6 +210,13 @@ section {
 		height: 66vh;
 
 		max-width: 96%;	
+
+		@media screen and (min-width: $tablet-break) {
+		
+					bottom: 2vh;
+					height: 73vh;
+		
+				}
 
 		@media screen and (min-width: $desktop-break) {
 		
@@ -233,7 +260,7 @@ section {
 		transition-timing-function: ease-out;
 		
 
-		@media screen and (min-width: $desktop-break) {
+		@media screen and (min-width: $tablet-break) {
 
 			top: 47vh;
 			width: 40vh;
@@ -276,6 +303,14 @@ section {
 
 		margin-left: -35%;
 
+		@media screen and (min-width: $tablet-break) {
+
+			top: 11vh;
+			width: 160%;
+			margin-left: -30%;
+
+				}
+
 	@media screen and (min-width: $desktop-break) {
 					
 		position: absolute; 
@@ -306,7 +341,7 @@ section {
 		width: 70%;
 		bottom: 26vh;
 
-		@media screen and (min-width: $desktop-break) {
+		@media screen and (min-width: $tablet-break) {
 		
 					max-width: 600px;
 
@@ -322,7 +357,7 @@ section {
 		width: 85%;
 		bottom: 26vh;
 
-		@media screen and (min-width: $desktop-break) {
+		@media screen and (min-width: $tablet-break) {
 		
 					max-width: 600px;
 
@@ -376,7 +411,17 @@ section {
 
 		top: 22vh;
 
+		@media screen and (min-width: $tablet-break) {
+
+				top:10vh;
+		
+					
+		
+				}
+
 		@media screen and (min-width: $desktop-break) {
+
+					top: 22vh;
 		
 					max-width: 500px;
 		
@@ -395,6 +440,14 @@ section {
 
 		bottom: 36vh;
 
+		@media screen and (min-width: $tablet-break) {
+
+				max-height: 55vh;
+		
+					
+		
+				}
+
 		@media screen and (min-width: $desktop-break) {
 		
 					max-height: 85vh;
@@ -406,6 +459,14 @@ section {
 
 			text-align: center;
 			top: 22vh;
+
+			@media screen and (min-width: $tablet-break) {
+
+				top:35vh;
+			
+						
+			
+					}
 
 
 			@media screen and (min-width: $desktop-break) {

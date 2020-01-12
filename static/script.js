@@ -74,7 +74,7 @@ var storyStructure = [
 
 // TEMP LOAD ZONE
 
-// storyEngine.storySpot = 4;
+// storyEngine.storySpot = 2;
 
     },
     
@@ -1239,7 +1239,7 @@ window.onload = function() {
 	setWindowHeight();
 
 	animate.scrollToTop()
-	
+
 	// setTimeout(function () {animate.scrollToTop();}, 1000);
 		// setTimeout(function () {animate.scrollTo('s4');}, 1000);
 
