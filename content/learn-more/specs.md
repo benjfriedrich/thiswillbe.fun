@@ -17,11 +17,11 @@ I stick mostly to **ES6 Javascript**, but occasionally I get into some **jQuery*
 
 I'm a big fan of using static site generators to build websites, distributing them using a CDN, rather than running everything on a server. It's not the best solution for every site, but it's a flexible, secure, and robust way to manage a site.
 
-I have experience using both **Hugo** and **Jekyll** as static site generators. They're both great.
+I have experience using **Hugo** and **Jekyll** as static site generators. They're both great. I've played around with others as well.
 
 I'm a huge fan of using **Netlify** as a build and content distribution tool.
 
-I use **Github** to manage the codebase--it integrates fantastically with Netlify.
+I use **Github** to manage codebases--it integrates fantastically with Netlify.
 
 There are a bunch of good client facing content managment tools. I've found **Foresty.io** to be a good option for most.
 
@@ -30,7 +30,7 @@ There are a bunch of good client facing content managment tools. I've found **Fo
 
 ### Traditional Stack
 
-JAMstack is cool, but I love **Wordpress** too. I'm not a **PHP** whiz, but I'm a champ at using it for templating Wordpress themes.
+JAMstack is cool, but I like **Wordpress** too. I'm not a **PHP** whiz, but I'm a champ at using it for templating Wordpress themes.
 
 I claim no expertise in building out complicated, high-load back-ends, but for small projects, it's really easy to toss up a virtual private server on **Digital Ocean** or **Linode**, install **Apache** or **NGINX**, and serve up a Wordpress site from there.
 
@@ -45,7 +45,7 @@ Depending on the client, there are times when the best solution is actually a se
 
 [Euphoria Coffee](https://drinkeuphoria.coffee): A JAMstack site with a snipcart powered online store.
 
-[Friedrich Design Co](https://friedrichdesign.co): My buisness site.
+[My Portfolio](https://benjaminfriedrich.com): My portfolio of graphics, web-work, and photography.
 
 [BNJMN](https://BNJMN.US): My personal site.
 

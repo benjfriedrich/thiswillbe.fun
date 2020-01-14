@@ -78,6 +78,5 @@ window.onload = function () {
 
  textRevealer.classify("#specs");
 
- console.log("onload");
 
 };
