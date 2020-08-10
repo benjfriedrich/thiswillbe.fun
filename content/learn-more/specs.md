@@ -2,30 +2,38 @@
 
 ### HTML 5 / CSS 3
 
-If it can be done using HTML and CSS, I can do it. I'm primo at this stuff. 
+**If it can be done using HTML and CSS, I can do it.** I'm primo at this stuff. Mobile-first, flexible layouts.
 
-Mobile-first, flexible layouts.
+Most of the HTML/CSS work I do these days takes place in the context of templating systems or frameworks, but that doesn’t diminish their importance as the foundational vocabulary of front-end web design. 
 
-### Javascript
+### Frontend JavaScript
 
-I'm good at javascript, but still growing. Capable of **using established libraries** and **building my own tools**. My focus is mostly on **DOM manipulation**, but I have some experince working with APIs, and some experince using Node.JS in severless functions.
+I'm good at javascript, but still growing. Capable of **using established libraries** and **building my own tools**. I've done my share direct **DOM manipulation** for simple tasks, but I've been focused on using more robust tools like **React** and **Svelte** to help make complex apps more maintainable.
 
-I stick mostly to **ES6 Javascript**, but occasionally I get into some **jQuery**. Recently I've been trasitioning to a more functional style.
+My style is frontend heavy, and I like working with **REST APIs** and query tools like **GraphQL**.
+
+I stick mostly to **ES6 Javascript**, but I’m not afraid of jQuery or Typescript or anything.
+
+For context, for a long time I was writing light-weight, spaghetti javascript (using simple libraries and writing basic functions). I didn’t think of myself as coder—I was just a designer—so I just did the bare minimum to achieve functionality.  
+
+**But then one afternoon, when I was debugging a sloppy mess I had made, I realized I *was* a coder. I was writing code. And I liked writing code. So why not learn to write good code.**
+
+ So I decided to expand my front-end development capability and started treating JS and web-development in general more seriously, and since then have turned it into a proficiency.
 
 
 ### JAMstack
 
-I'm a big fan of using static site generators to build websites, distributing them using a CDN, rather than running everything on a server. It's not the best solution for every site, but it's a flexible, secure, and robust way to manage a site.
+I'm a big fan of using static site generators to build websites, distributing them using a CDN, rather than running the site on a dedicated server.
 
-I have experience using **Hugo** and **Jekyll** as static site generators. They're both great. I've played around with others as well.
+I have a lot of experience using **Hugo** and **Jekyll** as static site generators. Recently I've focused more on tools like **Gatsby.js** and **Sapper** that enable you to use more robust front-end frameworks in a serverless context.
 
 I'm a huge fan of using **Netlify** as a build and content distribution tool.
 
-I use **Github** to manage codebases--it integrates fantastically with Netlify.
+I use **Github** to manage codebases—it integrates fantastically with Netlify.
 
-There are a bunch of good client facing content managment tools. I've found **Foresty.io** to be a good option for most.
-
-**Snipcart** is a good way to handle online commerce.
+If I need a server-side style work done, I like spinning up **AWS Lambda**, and using **Node.JS** to do the job.
+ 
+There are a bunch of good client facing content managment tools. I've worked with **Foresty.io** and **sanity.io**. 
 
 
 ### Traditional Stack
@@ -37,22 +45,18 @@ I claim no expertise in building out complicated, high-load back-ends, but for s
 
 ### WYSIWYG
 
-Depending on the client, there are times when the best solution is actually a service like **Squarespace**. It's limiting in lots of ways, but if you play by its rules, Sqaurespace can empower clients who need something made quickly that can be modified easily.
+Depending on the client, there are times when the best solution is actually a service like **Squarespace**. It's limiting in lots of ways as a developer, but if you play by its rules, Sqaurespace can empower clients who need something made quickly that can be modified easily.
+
 
 ### Examples
 
 *Almost* every line of code on this site is me, but here are a few other sites I've worked on that are cool. I've been pivoting back to web-design recently, so I'm rebuilding my professional portfio from scratch:
 
-[Euphoria Coffee](https://drinkeuphoria.coffee): A JAMstack site with a snipcart powered online store.
+[Euphoria Coffee](https://drinkeuphoria.coffee): A Gatsby/React site with a snipcart powered online store.
 
 [My Portfolio](https://benjaminfriedrich.com): My portfolio of graphics, web-work, and photography.
 
 [BNJMN](https://BNJMN.US): My personal site.
-
-[52 Failures](https://52failures.com): A site I built for my 2019 poetry project.
-
-[Chess Foundry](https://thechessfoundry.com): A site showcasing my digital chess set design hobby.
-
 
 ## Creative Skills
 
